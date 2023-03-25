@@ -1519,7 +1519,7 @@ body .header-container .menu-container .sf-menu>li:first-child>a
 {
 	padding-left: 0;
 }
-.sf-menu>li.submenu>a::after,
+/* .sf-menu>li.submenu>a::after,
 .sf-menu>li.submenu:hover>a::after
 {
 	font-family: 'template';
@@ -1539,7 +1539,7 @@ body .header-container .menu-container .sf-menu>li:first-child>a
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
+} */
 .style-6+.header-container .sf-menu>li.submenu>a::after,
 .style-6+.header-container .sf-menu>li.submenu:hover>a::after
 {
