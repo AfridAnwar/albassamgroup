@@ -1593,7 +1593,7 @@
 	}
 	.header-top-bar .social-icons span.cart-items-number
 	{
-		background: #1B2E59;
+		background: #1a1a1a;
 		color: #FFF;
 		top: -2px;
 		right: 0;
@@ -1606,7 +1606,7 @@
 	.style-2 .header-top-bar .social-icons span.cart-items-number,
 	.style-3 .header-top-bar .social-icons span.cart-items-number
 	{
-		background: #377EF9;
+		background: #dbb351;
 		color: #FFF;
 	}
 	/* --- search --- */
@@ -2245,7 +2245,7 @@
 	.row .tabs-navigation li a.selected,
 	.row .tabs-navigation li.ui-tabs-active a
 	{
-		border-bottom: 2px solid #377EF9;
+		border-bottom: 2px solid #dbb351;
 		padding-bottom: 16px;
 	}
 	/* --- accordion --- */
