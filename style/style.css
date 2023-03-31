@@ -3455,6 +3455,7 @@ body .counter-box-path
 .single-image img,
 .side-image img
 {
+	width: 100%;
 	max-width: 100%;
 }
 /* --- side row --- */
@@ -6099,5 +6100,14 @@ body.lock-position
 }
 .cuz-mb-5{
 	margin-bottom: 5rem;
+}
+.cuz-ul-flex{
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2em;
+	list-style-type: disc;
+	padding-left: 1.3rem;
+	gap: 1rem;
+
 }
 /* ends */
