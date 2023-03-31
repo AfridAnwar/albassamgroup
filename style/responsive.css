@@ -48,16 +48,18 @@
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 	.header.with-more-button .logo
 	{
-		width: 100%;
-		padding-bottom: 10px;
-		-ms-flex-order: 1;
-		-webkit-order: 1;
-		-moz-order: 1;
-		order: 1;
-		text-align: left;
+		/* width: 100%; */ 
+    padding-bottom: 10px;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+    order: 1;
+    text-align: left;
+    flex: 0 1 auto;
 	}
 	/* --- header icons --- */
 	.header-icons-container
@@ -1108,6 +1110,7 @@
 		-moz-order: 0;
 		order: 0;
 		padding-bottom: 0;
+		flex: 1 0 auto;
 	}
 	.style-6+.header-container .logo h1,
 	.style-6+.header-container .logo h1 a

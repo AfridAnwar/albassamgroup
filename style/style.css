@@ -955,7 +955,18 @@ body .header-top-bar-container.style-6 .header-toggle:hover
 	-moz-transition: none;
 	-webkit-transition: none;
 	transition: none;
+	width: 50px;
 }
+/* custome css */
+.cuz-logo-desc-flex{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	}
+	.swiper-slide img{
+		width: 100%;
+	}
+/* ends */
 .header .logo .secondary-logo,
 .transparent-header-container #fp-sticky-clone .primary-logo
 {
@@ -983,6 +994,13 @@ body .header-top-bar-container.style-6 .header-toggle:hover
 	line-height: 1;
 	letter-spacing: 0;
 }
+/* custome css */
+@media screen and (max-width:767px) {
+	.logo h1{
+		font-size: 12px;
+	}
+}
+/* ends */
 .logo h1 a
 {	
 	color: #252634;
@@ -2731,9 +2749,9 @@ body .horizontal-carousel.projects-list li.column
 }
 .features-list li .list-number.animated-element
 {
-	margin-left: -2px;
+	/* margin-left: -2px;
 	margin-top: -2px;
-	margin-bottom: 0;
+	margin-bottom: 0; */
 }
 .features-list li h4
 {
@@ -2808,7 +2826,7 @@ body .horizontal-carousel.projects-list li.column
 {
 	font-family: 'Montserrat', 'Arial', sans-serif;
 	font-size: 20px;
-	line-height: 34px;
+	line-height: 15px;
 	font-weight: 500;
 	color: #252634;
 }
@@ -3413,7 +3431,7 @@ body .counter-box-path
 }
 .side-right-minus-40
 {
-	right: -40px;
+	right: 0px;
 }
 .side-right-410
 {
@@ -6051,3 +6069,10 @@ body.lock-position
 	width: 100%;
 	height: 100%;
 }
+
+/* custome css */
+/* removing the title from  the youtube pop up */
+.pp_details{
+	display: none;
+}
+/* ends */

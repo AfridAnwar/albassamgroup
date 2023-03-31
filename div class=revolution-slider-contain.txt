@@ -1,0 +1,246 @@
+<div class="revolution-slider-container">
+        <div
+          class="revolution-slider"
+          data-version="5.4.8"
+          data-autoplay="1"
+          data-onhoverstop="0"
+        >
+          <ul>
+            <!-- SLIDE 1 -->
+            <li>
+              <!-- MAIN IMAGE -->
+              <img
+                src="images/slider/1920x610/image_01.jpg"
+                alt="slidebg1"
+                data-bgfit="cover"
+              />
+            </li>
+            <!-- SLIDE 2 -->
+            <li
+              data-transition="fade"
+              data-masterspeed="500"
+              data-slotamount="1"
+              data-delay="6000"
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="images/slider/1920x610/image_02.jpg"
+                alt="slidebg2"
+                data-bgfit="cover"
+              />
+            </li>
+
+            <!-- SLIDE 3 -->
+            <li
+              data-transition="fade"
+              data-masterspeed="500"
+              data-slotamount="1"
+              data-delay="6000"
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="images/slider/1920x610/image_03.jpg"
+                alt="slidebg3"
+                data-bgfit="cover"
+              />
+            </li>
+          </ul>
+          <!-- STATIC LAYERS -->
+          <div
+            class="tp-static-layers"
+            style="width: 100%; height: 100%; overflow: hidden"
+          >
+            <!-- LAYER 01 -->
+            <div
+              class="tp-static-layer tp-caption"
+              data-startslide="0"
+              data-endslide="99"
+              data-frames='[{"delay":500,"split":"lines","splitdelay":0.1,"speed":1500,"from":"y:50;z:0;o:0;","ease":"easeInOutQuart"},{"delay":"wait"}]'
+              data-x="left"
+              data-y="['136', '162', '172', '167', '128']"
+              data-width="full"
+            >
+              <h2>You go about your<br />business. We'll do<br />the rest.</h2>
+            </div>
+            <!-- LAYER 02 -->
+            <div
+              class="tp-static-layer tp-caption"
+              data-startslide="0"
+              data-endslide="99"
+              data-frames='[{"delay":1200,"speed":1500,"from":"y:20;o:0;","ease":"easeInOutQuart"},{"delay":"wait"}]'
+              data-x="left"
+              data-y="['324', '350', '324', '283', '213']"
+              data-width="full"
+            >
+              <h4>Accounting office and tax advisory services.</h4>
+            </div>
+            <!-- LAYER 03 -->
+            <div
+              class="tp-static-layer tp-caption"
+              data-startslide="0"
+              data-endslide="99"
+              data-frames='[{"delay":1900,"speed":1000,"from":"y:20;o:0;","ease":"easeInOutQuart"},{"delay":"wait"}]'
+              data-x="left"
+              data-y="['404', '430', '378', '328', '278']"
+              data-width="full"
+            >
+              <a
+                class="more"
+                href="index-26.htm?page=bookkeeping_quoting_calculator"
+                title="Let's get started"
+                >Let's get started</a
+              >
+            </div>
+            <!-- LAYER 04 -->
+            <div
+              class="tp-static-layer tp-caption"
+              data-startslide="0"
+              data-endslide="99"
+              data-frames='[{"delay":2300,"speed":1000,"from":"y:20;o:0;","ease":"easeInOutQuart"},{"delay":"wait"}]'
+              data-visibility="['on','on','on','on','off']"
+              data-x="['223', '223', '193', '193', '193']"
+              data-y="['404', '430', '378', '328', '278']"
+              data-width="250"
+            >
+              <a
+                class="more style-4 template-video1 prettyPhoto"
+                href="https://www.youtube.com/watch?v=AivyFZXT2ek&width=800&height=450"
+                title="Accounting office and tax advisory services"
+                >Watch the video</a
+              >
+            </div>
+            <!-- LAYER CALCULATOR -->
+            <div
+              class="tp-static-layer tp-caption"
+              data-startslide="0"
+              data-endslide="99"
+              data-frames='[{"delay":400,"speed":2000,"from":"y:40;o:0;","ease":"easeInOutQuart"},{"delay":"wait"}]'
+              data-x="right"
+              data-y="['150', '150', '174', '420', '370']"
+            >
+              <form
+                class="cost-calculator-container cost-calculator-form"
+                method="post"
+                action="?page=bookkeeping_quoting_calculator"
+              >
+                <fieldset
+                  class="column column-1-3 float-right cost-calculator-custom-mobile-padding"
+                >
+                  <div class="cost-calculator-box clearfix">
+                    <label>No. of sales invoices per month</label>
+                    <input
+                      type="hidden"
+                      name="sales-per-month-label"
+                      value="No. of sales invoices per month"
+                    />
+                    <div class="cost-slider-container">
+                      <input
+                        id="sales-per-month"
+                        class="cost-slider-input cost-calculator-cost-slider-input-hidden"
+                        name="sales-per-month"
+                        type="number"
+                        value="430"
+                      />
+                      <input
+                        id="sales-per-month-value"
+                        type="hidden"
+                        value="43"
+                        data-default="43"
+                      />
+                      <div
+                        class="cost-slider"
+                        data-value="430"
+                        data-step="5"
+                        data-min="5"
+                        data-max="1000"
+                        data-input="sales-per-month"
+                        data-value-input="sales-per-month-value"
+                        data-price="0.1"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="cost-calculator-box cost-calculator-summary-box clearfix"
+                  >
+                    <label>Your plan from</label>
+                    <span
+                      class="cost-calculator-price small-currency align-bottom-after margin-top-15"
+                      id="final-service-cost"
+                      ><span class="currency">$</span>0.00<span class="currency"
+                        >/ month</span
+                      ></span
+                    >
+                    <input
+                      type="hidden"
+                      id="final-service-cost-total"
+                      name="final-service-cost-total"
+                    />
+                    <input
+                      type="hidden"
+                      id="final-service-cost-total-value"
+                      name="final-service-cost-total-value"
+                      value="0"
+                    />
+                  </div>
+                  <a class="template-right2 more-submit" href="#"></a>
+                </fieldset>
+              </form>
+            </div>
+            <!-- / -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      /// below swiper slider 
+
+
+
+
+
+ <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="images/slider/1920x610/image_01.jpg"
+              alt="slidebg1"
+              data-bgfit="cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/slider/1920x610/image_02.jpg"
+              alt="slidebg2"
+              data-bgfit="cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/slider/1920x610/image_02.jpg"
+              alt="slidebg2"
+              data-bgfit="cover"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/slider/1920x610/image_03.jpg"
+              alt="slidebg3"
+              data-bgfit="cover"
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
