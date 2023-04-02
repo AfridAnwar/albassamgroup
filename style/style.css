@@ -970,6 +970,14 @@ body .header-top-bar-container.style-6 .header-toggle:hover
 .cuz-logo-desc-flex span:nth-child(2){
 	font-size: 20px;
 }
+@media (max-width:479px) {
+	.cuz-logo-desc-flex span:nth-child(1){
+		font-size: 21px;
+	}
+	.cuz-logo-desc-flex span:nth-child(2){
+		font-size: 12px;
+	}
+}
 
 	.swiper-slide img{
 		width: 100%;
@@ -2505,6 +2513,7 @@ body.search-overlay .search-absolute-container
 	margin-right: 50px;
 	display: flex;
     flex-direction: column;
+	justify-content: center;
 }
 .carousel-container
 {

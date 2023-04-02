@@ -1110,7 +1110,7 @@
 		-moz-order: 0;
 		order: 0;
 		padding-bottom: 0;
-		flex: 1 0 auto;
+		flex: 0 0 auto;
 	}
 	.style-6+.header-container .logo h1,
 	.style-6+.header-container .logo h1 a
@@ -2209,7 +2209,7 @@
 		display: -ms-flexbox;
 		display: -webkit-flexbox;
 		display: -webkit-flex;
-		display: flex;
+		display: block;
 		-ms-flex-direction: column;
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
