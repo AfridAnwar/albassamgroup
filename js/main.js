@@ -1124,7 +1124,7 @@ jQuery(document).ready(function ($) {
 
         //caroufred
         var visible = 3;
-        var autoplay = 0;
+        var autoplay = 1;
         var pause_on_hover = 0;
         var scroll = 3;
         var effect = "scroll";
