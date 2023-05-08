@@ -1668,7 +1668,7 @@ body .header-container .menu-container .sf-menu>li:first-child>a
 ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul,
 ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul
 {
-	left: 280px;
+	left: -279px;
 	z-index: 2;
 }
 ul.sf-menu li.left-flyout li:hover ul, ul.sf-menu li.left-flyout li.sfHover ul,
