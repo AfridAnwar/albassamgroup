@@ -1,67 +1,7 @@
-/* Table of Content
-==================================================
-#general
-#site container
-#headers
-#header
-#transparent header
-#page header
-#header icons
-#bread crumbs
-#menu
-#mobile menu
-#vertical menu
-#body styles
-#page
-#page layout
-#services
-#team
-#progress bars
-#carousel
-#projects
-#features
-#timeline
-#testimonials
-#our clients
-#simple list
-#slider control
-#backgrounds
-#parallax
-#counters
-#button label
-#side image
-#side row
-#svg
-#blog
-#single post
-#latest posts
-#taxonomies
-#buttons
-#comment form, contact form
-#tooltip
-#comments list
-#pagination
-#list bullet
-#tabs navigation
-#accordion
-#preloader
-#contact details
-#social icons
-#search
-#ui slider
-#ui dropdown
-#cost calculator
-#more buttons
-#copyright row
-#prettyPhoto
-#map
-#slider revolution container
-#slider revolution label
-#slider revolution navigation arrows
-#slider revolution navigation bullets
-#misc
-*/
-/* --- general --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+:root{
+	--font-poppins:'Poppins', sans-serif;
+}
 .clearfix::after
 {
     font-size: 0px;
@@ -695,7 +635,7 @@ body.overlay .site-container
 /* --- headers --- */
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Montserrat', 'Arial', sans-serif;
+	font-family: var(--font-poppins);
 	margin: 0;
 	padding: 0;
 	color: #252634;
@@ -6203,5 +6143,10 @@ body.lock-position
     display: flex;
     height: 600px !important;
 	
+}
+/* ends */
+/* helper  */
+.bg-linear{
+	background: linear-gradient(45deg, black, transparent);
 }
 /* ends */
