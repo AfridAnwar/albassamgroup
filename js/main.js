@@ -2697,3 +2697,9 @@ navs.forEach((x) => {
     }
   });
 });
+
+// custome drop down menu
+// const subMenu = document.querySelectorAll(".submenu");
+// subMenu.forEach((x) => {
+//   x.addEventListener("click", (e) => {});
+// });

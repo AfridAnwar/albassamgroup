@@ -6149,4 +6149,7 @@ body.lock-position
 .bg-linear{
 	background: linear-gradient(45deg, black, transparent);
 }
+.mr-top{
+	margin-top: 3rem;
+}
 /* ends */
