@@ -6153,3 +6153,13 @@ body.lock-position
 	margin-top: 3rem;
 }
 /* ends */
+/* custome css for nav menu  */
+.sf-menu li a{
+	text-transform: capitalize;
+}
+.ser-a span{
+	color:lightgrey;
+	font-size: 1em;
+	
+}
+/* ends */
