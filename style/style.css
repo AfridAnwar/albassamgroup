@@ -6157,9 +6157,12 @@ body.lock-position
 .sf-menu li a{
 	text-transform: capitalize;
 }
+.sf-menu .submenu ul li a{
+	text-transform: uppercase;
+}
 .ser-a span{
 	color:lightgrey;
 	font-size: 1em;
-	
+
 }
 /* ends */
