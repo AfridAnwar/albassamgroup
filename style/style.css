@@ -6165,4 +6165,19 @@ body.lock-position
 	font-size: 1em;
 
 }
+.span-ov{
+	color: lightgray;
+}
+.hl-capitalize{
+	text-transform: capitalize;
+}
+.service-details h3{
+	text-transform: capitalize;
+}
+.template-right3{
+	text-transform: capitalize;
+}
+.vertical-menu li{
+	text-transform: capitalize;
+}
 /* ends */
