@@ -1230,8 +1230,8 @@
 	}
 	.revolution-slider h2
 	{
-		font-size: 24px;
-		line-height: 36px;
+		font-size: 35px;
+		line-height: 1.2;
 	}
 	.revolution-slider h4
 	{	
@@ -1941,7 +1941,9 @@
 	}
 	.revolution-slider h2
 	{
-		font-size: 30px;
+		font-size: 35px;
+		line-height: 1.2;
+		transform: translateY(-72px);
 	}
 	.revolution-slider h4
 	{

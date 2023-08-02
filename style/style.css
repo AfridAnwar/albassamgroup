@@ -1160,6 +1160,7 @@ body .transparent-header-container
 	margin-top: 103px;
 	color: #FFF;
 }
+
 /* --- header icons --- */
 .header-icons-container
 {
@@ -6179,5 +6180,11 @@ body.lock-position
 }
 .vertical-menu li{
 	text-transform: capitalize;
+}
+@media(max-width:769px){
+	.page-header.header-background h1{
+		font-size: 36px;
+		margin-top: 15px;
+	}
 }
 /* ends */
