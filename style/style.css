@@ -902,6 +902,7 @@ body .header-top-bar-container.style-6 .header-toggle:hover
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	gap: .5rem;
 	}
 
 .cuz-logo-desc-flex span:nth-child(1){
@@ -910,7 +911,8 @@ body .header-top-bar-container.style-6 .header-toggle:hover
 .cuz-logo-desc-flex span:nth-child(2){
 	font-size: 20px;
 }
-@media (max-width:479px) {
+
+@media (max-width:500px) {
 	.cuz-logo-desc-flex span:nth-child(1){
 		font-size: 21px;
 	}
@@ -1160,7 +1162,6 @@ body .transparent-header-container
 	margin-top: 103px;
 	color: #FFF;
 }
-
 /* --- header icons --- */
 .header-icons-container
 {
@@ -3051,28 +3052,28 @@ body .horizontal-carousel.projects-list li.column
 /* --- backgrounds --- */
 body .background-1
 {
-	background-image: url('../images/samples/decor_01.png');
+	background-image: url('../images/decor_01.png');
 	background-position: bottom -1px right;
 	background-repeat: no-repeat;
 	border-bottom: 1px solid #5a5a5a;
 }
 body .background-2
 {
-	background-image: url('../images/samples/decor_02.png');
+	background-image: url('../images/decor_02.png');
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 body .background-3
 {
-	background-image: url('../images/samples/1920x1200/image_02.jpg');
+	background-image: url('../images/image_02.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 608px;
 }
 body .background-4
 {
-	background-image: url('../images/samples/decor_03.png');
+	background-image: url('../images/decor_03.png');
 	background-repeat: no-repeat;
 }
 body .background-4::before
@@ -3086,25 +3087,25 @@ body .background-4::before
 }
 body .background-5
 {
-	background-image: url('../images/samples/1920x1200/image_03.jpg');
+	background-image: url('../images/image_03.jpg');
 	background-size: cover;
 	background-position: center;
 }
 body .background-6
 {
-	background-image: url('../images/samples/480x480/image_01.jpg');
+	background-image: url('../images/image_01.jpg');
 	background-size: cover;
 	background-position: center;
 }
 body .background-7
 {
-	background-image: url('../images/samples/decor_06.jpg');
+	background-image: url('../images/decor_06.jpg');
 	background-size: cover;
 	background-position: center;
 }
 body .background-8
 {
-	background-image: url('../images/samples/1064x900/image_01.jpg');
+	background-image: url('../images/image_01.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -3116,11 +3117,11 @@ body .background-8
 }
 .header-background.header-background-1
 {
-	background-image: url('../images/samples/1920x400/image_01.jpg');
+	background-image: url('../images/saudi-oil.jpg');
 }
 .header-background.header-background-2
 {
-	background-image: url('../images/samples/1920x400/image_02.jpg');
+	background-image: url('../images/saudi-oil-2.jpg');
 }
 .header-background.header-background-3
 {
@@ -6145,46 +6146,37 @@ body.lock-position
     height: 600px !important;
 	
 }
+@media(max-width:330px){
+	.header .logo, .header.with-more-button .logo{
+		margin-left: 0.6rem!important;
+	}
+	.logo a img{
+		margin-right: 16px;
+	}
+	.header .mobile-menu-switch{
+		margin-right: 0.6rem!important;
+	}
+}
 /* ends */
+/* translate button  */
+#enTranslator,#arTranslator{
+	padding: 1rem;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+}
+#enTranslator,#arTranslator
+:hover{
+	color: black;
+	
+}
+/* ends */
+
 /* helper  */
 .bg-linear{
 	background: linear-gradient(45deg, black, transparent);
 }
 .mr-top{
 	margin-top: 3rem;
-}
-/* ends */
-/* custome css for nav menu  */
-.sf-menu li a{
-	text-transform: capitalize;
-}
-.sf-menu .submenu ul li a{
-	text-transform: uppercase;
-}
-.ser-a span{
-	color:lightgrey;
-	font-size: 1em;
-
-}
-.span-ov{
-	color: lightgray;
-}
-.hl-capitalize{
-	text-transform: capitalize;
-}
-.service-details h3{
-	text-transform: capitalize;
-}
-.template-right3{
-	text-transform: capitalize;
-}
-.vertical-menu li{
-	text-transform: capitalize;
-}
-@media(max-width:769px){
-	.page-header.header-background h1{
-		font-size: 36px;
-		margin-top: 15px;
-	}
 }
 /* ends */

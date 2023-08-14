@@ -2703,3 +2703,29 @@ navs.forEach((x) => {
 // subMenu.forEach((x) => {
 //   x.addEventListener("click", (e) => {});
 // });
+
+// translation part
+function translate(lng, tagAttr) {
+  var translate = new Translate();
+  translate.init(tagAttr, lng);
+  translate.process();
+  if (lng == "en") {
+    $("#enTranslator").css("color", "#black");
+    $("#arTranslator").css("color", "white");
+  }
+  if (lng == "ar") {
+    $("#arTranslator").css("color", "#black");
+    $("#enTranslator").css("color", "white");
+  }
+}
+$(document).ready(function () {
+  //This is id of HTML element (English) with attribute lng-tag
+  $("#enTranslator").click(function () {
+    translate("en", "lng-tag");
+  });
+  //This is id of HTML element (Khmer) with attribute lng-tag
+  $("#arTranslator").click(function () {
+    translate("ar", "lng-tag");
+  });
+});
+// ends

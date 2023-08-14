@@ -1,20 +1,54 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Al Bassam Group Of Companies - TechnoServe</title>
+ <head>
+    <title>Al Bassam Group -</title>
     <!--meta-->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1.2"
     />
-    <meta name="format-detection" content="telephone=no" />
+
     <meta
       name="keywords"
       content="Business, Finance, Consulting, Accounting, Loans, Optimization, Analyzes, Banking, Audit, Capital, Costs reduction, Employee benefits, Company value"
     />
-    <meta name="description" content="Business Finance Consulting Template" />
-    <!--slider revolution-->
+    <script src="./rs-plugin/js/jquery.themepunch.enablelog.js"></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
+    <!-- bootstrap  -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+    <!-- ends -->
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- ends -->
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" />
     <!--style-->
     <link
@@ -49,8 +83,9 @@
     />
     <link rel="stylesheet" type="text/css" href="fonts/social/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
+  
   </head>
-  <body class="fp-site-preloader with-topbar">
+<body class="fp-site-preloader with-topbar"  onload="translate('en','lng-tag')">
     <div
       style="
         position: fixed;
@@ -73,8 +108,8 @@
       <div class="header-top-bar-container clearfix">
         <div class="header-top-bar">
           <ul class="contact-details clearfix">
-            <li class="template-location1">
-              الدمام 31461 المملكة العربية السعودية
+            <li class="template-location1" lng-tag="location">
+              Dammam 31461 Kingdom of Saudi Arabia
             </li>
             <li class="template-phone">
               <a href="tel:+966138051313">+966138051313</a>
@@ -98,9 +133,8 @@
                 title="youtube"
               ></a>
             </li>
-            <li>
-              <div id="google_translate_element" />
-            </li>
+            <li id="enTranslator">En</li>
+            <li id="arTranslator">Ar</li>
           </ul>
         </div>
         <a href="#" class="header-toggle template-chev-up1"></a>
@@ -110,11 +144,7 @@
         <div class="header with-more-button">
           <div class="logo">
             <h1>
-              <a
-                href="index.htm?page=home"
-                title="Al Bassam Group "
-                translate="no"
-              >
+              <a href="index.html?page=home" title="Al Bassam Group " translate="no">
                 <img
                   src="images/albassam logo.jpg"
                   srcset="images/albassam logo.jpg"
@@ -128,10 +158,8 @@
                   alt="logo"
                 />
                 <div class="cuz-logo-desc-flex">
-                  <span class="logo-text notranslate">مجموعة شركات البسام</span>
-                  <span class="logo-text notranslate"
-                    >Al Bassam Group Of Companies</span
-                  >
+                  <span class="logo-text">مجموعة شركات البسام</span>
+                  <span class="logo-text">Al Bassam Group Of Companies</span>
                 </div>
               </a>
             </h1>
@@ -139,54 +167,40 @@
           <div class="menu-container clearfix">
             <nav>
               <ul class="sf-menu">
-                <li class="submenu">
-                  <a href="index.html" title="Home"> الصفحة الرئيسية </a>
+                <li class="submenu ">
+                  <a href="index.html" title="Home" lng-tag="home"> Home </a>
                 </li>
                 <li class="submenu selected">
-                  <a href="trading.html" title="Pages"> المنتجات والخدمات </a>
-                  <ul>
+                  <a href="trading.html" title="Pages" lng-tag="products"> Products & Services </a>
+                  <ul translate="no" class="notranslate">
                     <li class="submenu">
-                      <a href="" title="About style 1"> AB الطاقة </a>
+                      <a href="" title="About style 1"> AB Energy </a>
                       <ul>
-                        <li class="selected">
-                          <a
-                            href="techno.html"
-                            class="notranslate"
-                            title="About style 1"
-                          >
-                            Technical Services For Industries – Techno Serve
-                            <span class="notranslate span-ov">
-                              الخـــدمات الفنيــة للصناعــات
-                            </span>
+                        <li>
+                          <a href="techno.html" title="About style 1">
+                            Techno Serve
                           </a>
                         </li>
                         <li>
                           <a href="saudioil.html" title="About style 2">
-                            حقل النفط السعودي</a
-                          >
+                            Saudi oil Field
+                          </a>
                         </li>
                       </ul>
                     </li>
                     <li class="submenu">
-                      <a href="" title="Our services style 1"> AB الصناعية </a>
+                      <a href="" title="Our services style 1">
+                        AB Industrial
+                      </a>
                       <ul>
                         <li>
                           <a href="apeco.html" title="Our services style 1">
-                            Salah & Musaad M. Al Bassam Petroleum Equipment Co -
-                            APECO
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركـة صلاح ومساعد محمد البسـام للمعدات البترولية
-                            </span>
+                            Apeco
                           </a>
                         </li>
                         <li>
                           <a href="gulf.html " title="Our services style 2">
-                            Gulf Heavy Industries co - GHI
-                            <br />
-                            <span class="notranslate span-ov">
-                              الخليـج للصناعات الثقيلة
-                            </span>
+                            GHI
                           </a>
                         </li>
                         <li>
@@ -194,19 +208,12 @@
                             href="industrial.html"
                             title="Single service style 1"
                           >
-                            Industrial Support Services Company - ISS
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركة خدمــات المسـانده الصناعيــة
-                            </span>
+                            ISS
                           </a>
                         </li>
                         <li>
-                          <a
-                            href="javascript:void(0);"
-                            title="Single service style 2"
-                          >
-                            شركة الورق
+                          <a href="" title="Single service style 2">
+                            Paper Factory
                           </a>
                         </li>
                         <li>
@@ -214,51 +221,44 @@
                             href="saudiwater.html"
                             title="Single service style 2"
                           >
-                            SAUDI WATER TECHNOLOGY COMPANY
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركــة تقنيــة الميـاه السعوديــة
-                            </span>
+                            Saudi Water Treatment
                           </a>
                         </li>
                         <li>
                           <a href="" title="Single service style 2">
-                            Advanced Laboratories For Testing Materials
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركـة المختبرات المتقدمة لـفـحص المــواد
-                            </span>
+                            Advanced Laboratary For Testing Materials
                           </a>
                         </li>
                       </ul>
                     </li>
                     <li class="submenu">
-                      <a href="" title="Case studies"> المستهلك والعقارات </a>
+                      <a href="" title="Case studies">
+                        Consumer & Real-estate
+                      </a>
                       <ul>
                         <li>
                           <a href="realestate.html" title="Case studies">
-                            REAL ESTATE
-                            <br />
-                            <span class="notranslate span-ov">
-                              الــعقاريـة
-                            </span>
+                            Real Estate
                           </a>
                         </li>
                         <li>
                           <a href="travel.html" title="Single case study">
-                            يسافر
+                            Travel & Tourism
                           </a>
+                        </li>
+                        <li>
+                          <a href="" title="Single case study"> Khobar X </a>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li class="">
-                  <a href="./about-us.html" title="about"> معلومات عنا </a>
+                  <a href="./about-us.html" title="about" lng-tag="about"> About </a>
                 </li>
 
                 <li class="submenu">
-                  <a href="contact.html" title="Case studies"> اتصل بنا </a>
+                  <a href="contact.html" title="Case studies" lng-tag="contact"> Contact </a>
                 </li>
               </ul>
             </nav>
@@ -271,13 +271,13 @@
                     >
                   </li>
                   <li class="">
-                    <a href="./index.html" title="Home"> الصفحة الرئيسية </a>
+                    <a href="./index.html" title="Home" lng-tag="home"> Home </a>
                   </li>
                   <li>
-                    <a href="./about-us.html" title="about"> معلومات عنا </a>
+                    <a href="./about-us.html" title="about" lng-tag="about"> About </a>
                   </li>
                   <li class="selected">
-                    <a href="./trading.html" title="Pages">
+                    <a href="./trading.html" title="Pages" lng-tag="products">
                       Products & Services
                     </a>
                     <a href="#" class="template-plus3"></a>
@@ -286,16 +286,9 @@
                         <a href="" title="About style 1"> AB Energy </a>
                         <a href="#" class="template-plus3"></a>
                         <ul>
-                          <li class="selected">
-                            <a
-                              href="techno.html"
-                              class="notranslate"
-                              title="About style 1"
-                            >
-                              Technical Services For Industries – Techno Serve
-                              <span class="notranslate span-ov">
-                                الخـــدمات الفنيــة للصناعــات
-                              </span>
+                          <li>
+                            <a href="techno.html" title="About style 1">
+                              Techno Serve
                             </a>
                           </li>
                           <li>
@@ -309,25 +302,16 @@
                         <a href="" title="Our services style 1">
                           AB Industrial
                         </a>
-                        <a href="#" class="template-plus3"></a>
+ <a href="#" class="template-plus3"></a>
                         <ul>
                           <li>
                             <a href="apeco.html" title="Our services style 1">
-                              Salah & Musaad M. Al Bassam Petroleum Equipment Co
-                              - APECO
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركـة صلاح ومساعد محمد البسـام للمعدات البترولية
-                              </span>
+                              APECO
                             </a>
                           </li>
                           <li>
                             <a href="gulf.html" title="Our services style 2">
-                              Gulf Heavy Industries co - GHI
-                              <br />
-                              <span class="notranslate span-ov">
-                                الخليـج للصناعات الثقيلة
-                              </span>
+                              GHI
                             </a>
                           </li>
                           <li>
@@ -335,19 +319,12 @@
                               href="industrial.html"
                               title="Single service style 1"
                             >
-                              Industrial Support Services Company - ISS
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركة خدمــات المسـانده الصناعيــة
-                              </span>
+                              ISS
                             </a>
                           </li>
                           <li>
-                            <a
-                              href="javascript:void(0);"
-                              title="Single service style 2"
-                            >
-                              Paper co
+                            <a href="" title="Single service style 2">
+                              Paper Factory
                             </a>
                           </li>
                           <li>
@@ -355,39 +332,34 @@
                               href="saudiwater.html"
                               title="Single service style 2"
                             >
-                              SAUDI WATER TECHNOLOGY COMPANY
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركــة تقنيــة الميـاه السعوديــة
-                              </span>
+                              Saudi Water Treatment
                             </a>
                           </li>
                           <li>
                             <a href="" title="Single service style 2">
-                              Advanced Laboratories For Testing Materials
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركـة المختبرات المتقدمة لـفـحص المــواد
-                              </span>
+                              Advanced Laboratary For Testing Materials
                             </a>
                           </li>
                         </ul>
                       </li>
                       <li class="submenu">
                         <a href="" title="About style 1">
-                          المستهلك والعقارات
+                          Consumer & Real-estate
                         </a>
-                        <a href="#" class="template-plus3"></a>
+ <a href="#" class="template-plus3"></a>
                         <ul>
                           <li>
                             <a href="realestate.html" title="About style 1">
-                              العقارات
+                              Real Estate
                             </a>
                           </li>
                           <li>
                             <a href="travel.html" title="About style 2">
-                              يسافر
+                              Travel & Tourism
                             </a>
+                          </li>
+                          <li>
+                            <a href="" title="About style 2"> Khobar X </a>
                           </li>
                         </ul>
                       </li>
@@ -395,16 +367,9 @@
                   </li>
 
                   <li>
-                    <a href="./contact.html" title="Contact"> اتصل بنا </a>
+                    <a href="./contact.html" title="Contact" lng-tag="contact"> Contact </a>
                   </li>
-                  <li>
-                    <a
-                      class="more display-block"
-                      href="contact.html"
-                      title="Get a quote"
-                      >Get a quote</a
-                    >
-                  </li>
+                 
                 </ul>
               </nav>
             </div>
@@ -426,19 +391,17 @@
             <div class="bread-crumb-container">
               <ul class="bread-crumb">
                 <li>
-                  <a title="Home" href="index-1.html"> الصفحة الرئيسية </a>
+                  <a title="Home" href="index.html" lng-tag="home"> Home </a>
                 </li>
                 <li class="separator">&middot;</li>
                 <li>
-                  <a title="Our services" href="javascript:void(0);">
-                    تكنو سيرف - شركة البسام للمعدات البترولية
-                  </a>
+                  <a title="Our services" href="./about-us.html" lng-tag="about"> About Us </a>
                 </li>
                 <li class="separator">&middot;</li>
-                
+                <li lng-tag="technohead">Techno Serve – Al-Bassam Petroleum Equipment Company</li>
               </ul>
             </div>
-            <h1>تكنو سيرف - شركة البسام للمعدات البترولية</h1>
+            <h1 lng-tag="technohead">Techno Serve – Al-Bassam Petroleum Equipment Company</h1>
           </div>
         </div>
         <div class="clearfix">
@@ -488,32 +451,37 @@
               </div>
             </div>
             <div class="column column-1-2">
-              <label class="box-header">نحن مجموعة شركات البسام</label>
-              <h2 class="box-header margin-top-15">
-                تكنو سيرف - شركة البسام للمعدات البترولية
+              <label class="box-header" lng-tag="welcomeabc"
+                >WE ARE AL BASSAM GROUP OF COMPANIES</label
+              >
+              <h2 class="box-header margin-top-15" lng-tag="technohead">
+                Techno Serve – Al-Bassam Petroleum Equipment Company
               </h2>
-              <h5 class="margin-top-40">
-                شركة تكنوسيرف المملكة العربية السعودية المحدودة هي شركة صناعية
-                ديناميكية رائدة تكتل في المملكة العربية السعودية ، تأسست في
-                العام 2002 في اسم شركة يوروتكنولوجي السعودية المحدودة. والشركة
-                مشتركة مملوكة لمجموعة البسام ، الهيثم للصناعات والاقتصاد شركة
-                التطوير والطاقة الديناميكية. حقل نفط تكنوسيرف يقع المركز في
-                الدمام بالمملكة العربية السعودية على طريق الظهران - الجبيل
-                السريع. تقع منشأتنا في 35000 متر مربع موقع يقدم مجموعة كاملة من
-                الخدمات لدينا العملاء بما في ذلك التفتيش والإصلاح والتصنيع و
-                إعادة التصديق. مرفق متجر الآلات للشركة مرخصة من قبل معهد البترول
-                الأمريكي (API) للتصنيع معدات الحفر ، API أعمى ، قطب ، رقبة
-                ملحومة ، وخيوط الحواف المصاحبة ، التحكم في ضغط التوصيل ذي الحواف
-                والمحور المعدات ، المشابك ، الصلبان ذات الحواف والمرصعة ،
-                المحملات ، البكرات ، محولات مزدوجة مرصعة ، وأكثر من ذلك. نحن
-                حاليا نحمل API 5CT و API 6A و API 16A و API 7-1 من API وكذلك
-                كونها منشأة معتمدة مع API Q1 و ISO 9001: 2008 و ISO / TS اعتماد
-                29001. نقدم كل ما سبق لأرامكو السعودية ولجميع شركات الحفر الكبرى
-                داخل المملكة المملكة العربية السعودية ودول مجلس التعاون الخليجي.
-                لدينا تراخيص إضافية من Grant Prideco لقطع اتصالات سلسلة XT
-                الخاصة بهم ومن Voest Alpine لقطع وصلات VAGT المتميزة 2-3 / 8 إلى
-                7 بوصة. نحن نفعل كل شيء إصلاح وإعادة اعتماد الصمامات ومشعبات
-                الخنق ، مثل حسنًا.
+              <h5 class="margin-top-40" lng-tag="techabcdesc">
+                TechnoServe Saudi Arabia Co. LTD is a dynamic leading industrial
+                conglomerate in Saudi Arabia, established in the year 2002 in
+                the name of Eurotechnology Saudi Co Ltd. The Company is jointly
+                owned by Al Bassam Group, Al-Haitam for Industries & Economic
+                Development and Dynamic Energy Company. Technoserve’s oilfield
+                centre is situated in Dammam, Kingdom of Saudi Arabia on the
+                main Dhahran – Jubail Highway. Our facility is situated in a
+                35,000 m2 location which offers a full range of services for our
+                customers including Inspection, Repair, Manufacture and
+                Re-Certification. The company’s machine shop facility is
+                licensed by American Petroleum institute (API) to manufacture
+                drilling equipment, API blind, swivel, weld neck, and threaded
+                companion flanges, flanged and hub connection pressure control
+                equipment, clamps, flanged and studded crosses, tees, spools,
+                double studded adapters, and more. We currently hold the API
+                5CT, API 6A, API 16A and API 7-1 Licences from API as well as
+                being an approved facility with API Q1, ISO 9001:2008 and ISO/TS
+                29001 Accreditation. We provide all of the above to Saudi Aramco
+                and to all the major Drilling Companies within the Kingdom of
+                Saudi Arabia and GCC. We hold additional licences from Grant
+                Prideco to cut their XT series connections and from Voest Alpine
+                to cut 2-3/8 to 7” VAGT premium connections . We are doing all
+                repair and re-certification of valves and choke manifolds, as
+                well.
               </h5>
             </div>
           </div>
@@ -522,154 +490,89 @@
               <table>
                 <tbody>
                   <tr class="header-row">
-                    <th colspan="2">تم توفير الخدمة</th>
+                    <th colspan="2" lng-tag="servicep">SERVICE PROVIDED</th>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet">موصلات متقاطعة</p>
+                      <p class="bullet" lng-tag="tech1 " >Cross-over connectors</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet">أعلى الموصلات</p>
+                      <p class="bullet" lng-tag="tech2">Top connectors</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet">المحملات والصلبان</p>
+                      <p class="bullet" lng-tag="tech3">Tees and Crosses</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet">بكرات المحول والمباعد</p>
+                      <p class="bullet" lng-tag="tech4">Adapter and Spacer spools</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet">موصلات ذات حواف</p>
+                      <p class="bullet" lng-tag="tech5">Flanged Connectors</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet">موصلات الخيط</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">موصلات نهاية أخرى</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">الشفاه المصاحبة</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">الشفاه ذات الرقبة الملحومة</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">وصلات المحور</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">بكرات الحفر</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">معدات المنوع</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">محولات مزدوجة رصع</p>
+                      <p class="bullet" lng-tag="tech6">Thread Connectors</p>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <!-- <div class="column column-1-2">
+            <div class="column column-1-2">
               <table>
                 <tbody>
-                  <tr class="header-row">
-                    <th colspan="2">OUR PRODUCTS</th>
-                  </tr>
                   <tr>
                     <td>
-                      <p class="bullet">  Tubing & Casing — API / PREMIUM CONNECTIONS</p>
+                      <p class="bullet" lng-tag="tech7">Other End connectors</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet">
-                        Line Pipe – Seamless
-                      </p>
+                      <p class="bullet" lng-tag="tech8">Companion Flanges</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet"> Drill Pipe</p>
+                      <p class="bullet" lng-tag="tech9">Weld Neck Flanges</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet">  Valves – Gate, Globe, Check, Ball, Butterfly</p>
+                      <p class="bullet" lng-tag="tech10">Hub connections</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet"> Downhole Gauges – Pressure & Temperature</p>
+                      <p class="bullet" lng-tag="tech11">Drilling Spools</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet"> Industrial Batteries</p>
+                      <p class="bullet" lng-tag="tech12">Manifold Equipment</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p class="bullet"> Flanges / Fittings</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">  Industrial Cycles  </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet"> Additive Injectors</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet"> RO Plants & Spares</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">  Diesel Engines / Generator Sets / Pumps</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="bullet">  Compressors</p>
+                      <p class="bullet" lng-tag="tech13">Double Studded Adaptors</p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-            </div> -->
+            </div>
           </div>
           <div class="row gray full-width">
             <div class="row padding-top-95 padding-bottom-95">
               <label class="box-header align-center"></label>
-              <h2 class="box-header align-center margin-top-15">
-                فيما يلي شركات مجموعة البسام
+              <h2 class="box-header align-center margin-top-15" lng-tag="albcomp">
+                Following Are The Companies Of Al Bassam Group
               </h2>
               <div class="carousel-container margin-top-67 clearfix">
                 <ul class="cuz-flex-stretch services-list horizontal-carousel">
@@ -689,16 +592,18 @@
                         <a
                           href="apeco.html"
                           title="Accounting and tax advisory services"
-                          >ابيكو - شركة البسام للمعدات البترولية</a
+                          lng-tag="apecottl"
+                          >APECO – Al-Bassam Petroleum Equipment Company</a
                         >
                       </h3>
-                      <p>
-                        شركة البسام للمعدات البترولية (ابيكو) هي أ شركة تابعة
-                        مملوكة بالكامل لمجموعة البسام مع شركائها المقر الرئيسي
-                        في الدمام. EST
+                      <p lng-tag="apecodesc">
+                        Al-Bassam Petroleum Equipment Company (APECO) is a
+                        wholly owned subsidiary of Al-Bassam Group with its
+                        headquarters in Dammam. Est
                       </p>
                       <a class="more" href="./apeco.html" title="Learn more"
-                        >اقرأ أكثر</a
+                      lng-tag='learnmore'
+                        >Read more</a
                       >
                     </div>
                   </li>
@@ -718,16 +623,17 @@
                         <a
                           href="./techno.html"
                           title="Strategic and transaction consulting services"
-                          >شركة تكنوسيرف السعودية العربية المحدودة</a
+                          lng-tag="techttle"
+                          >TECHNOSERVE SAUDI ARABIA CO. LTD</a
                         >
                       </h3>
-                      <p>
-                        شركة تكنوسيرف المملكة العربية السعودية المحدودة هي شركة
-                        رائدة ديناميكية تكتل صناعي في المملكة العربية السعودية ،
-                        تأسس في عام 2002
+                      <p lng-tag="techdesc">
+                        TechnoServe Saudi Arabia Co. LTD is a dynamic leading
+                        industrial conglomerate in Saudi Arabia, established in
+                        the year 2002
                       </p>
-                      <a class="more" href="./techno.html" title="Learn more"
-                        >اقرأ أكثر</a
+                      <a class="more" href="./techno.html" title="Learn more" lng-tag="learnmore"
+                        >Read more</a
                       >
                     </div>
                   </li>
@@ -747,15 +653,17 @@
                         <a
                           href="./gulf.html"
                           title="Loans and reviews of financial statements"
-                          >شركة الخليج للصناعات الثقيلة (GHI)</a
+                          lng-tag="ghittle"
+                          >GULF HEAVY INDUSTRIES CO. (GHI)</a
                         >
                       </h3>
-                      <p>
-                        شركة الخليج للصناعات الثقيلة (GHI) هي جزء من شركة البسام
-                        مجموعة شركات وهي من أوائل الشركات الخاصة تكتلات في كي
+                      <p lng-tag="ghidesc">
+                        Gulf heavy Industries Co. (GHI) is part of Al-Bassam
+                        Group of Companies, which is one of the first private
+                        companies in the Kingdom Of Saudi Arabia
                       </p>
-                      <a class="more" href="gulf.html" title="Learn more"
-                        >اقرأ أكثر</a
+                      <a class="more" href="gulf.html" title="Learn more" lng-tag="learnmore"
+                        >Read more</a
                       >
                     </div>
                   </li>
@@ -775,18 +683,21 @@
                         <a
                           href="./industrial.html"
                           title="Business plans, valuations and analyzes"
-                          >خدمة الدعم الصناعي</a
+                          lng-tag="issttle"
+                          >Industrial Support Service</a
                         >
                       </h3>
-                      <p>
-                        ISS هي خدمات تفتيش متميزة ورائدة شركة في المملكة وتستهدف
-                        تقديم خدمات واسعة نطاق التفتيش
+                      <p lng-tag="issdesc">
+                        ISS is a distinguished & leading inspection services
+                        company in the Kingdom and targeted in providing wide
+                        range of Inspection
                       </p>
                       <a
                         class="more"
                         href="./industrial.html"
                         title="Learn more"
-                        >اقرأ أكثر</a
+                        lng-tag="learnmore"
+                        >Read more</a
                       >
                     </div>
                   </li>
@@ -806,19 +717,21 @@
                         <a
                           href="./international.html"
                           title="Performance management and improvement"
-                          >وكالة البسام العالمية للسيارات</a
+                          lng-tag="iatttle"
+                          >Al-Bassam International Automobile Agency</a
                         >
                       </h3>
-                      <p>
-                        شركة أميال الخليج هي شركة تابعة لمجموعة البسام شركات.
-                        إنها واحدة من الخدمات اللوجستية المعروفة وذات السمعة
-                        الطيبة شركة في ...
+                      <p lng-tag="iatdesc">
+                        Gulf Miles Company is a subsidiary of Al-Bassam Group of
+                        Companies. It is one the well-known & reputed logistic
+                        company in the...
                       </p>
                       <a
                         class="more"
                         href="./international.html"
                         title="Learn more"
-                        >اقرأ أكثر</a
+                        lng-tag="learnmore"
+                        >Read more</a
                       >
                     </div>
                   </li>
@@ -838,19 +751,21 @@
                         <a
                           href="./saudiwater.html"
                           title="Small business employee benefits"
-                          >السعودية لتقنية المياه</a
+                          lng-tag="swtttle"
+                          >Saudi Water Technology</a
                         >
                       </h3>
-                      <p>
-                        شركة تكنولوجيا المياه السعودية (SWT) هي عضو في شركة
-                        البسام مجموعة شركات ومن الرواد في مجال المياه ومعالجة
-                        مياه الصرف الصحي
+                      <p lng-tag="swtdesc">
+                        Saudi Water Technology (SWT) is a member of Al Bassam
+                        group of companies and one of the pioneers in the water
+                        and waste water trea
                       </p>
                       <a
                         class="more"
                         href="./saudiwater.html"
                         title="Learn more"
-                        >اقرأ أكثر</a
+                        lng-tag="learnmore"
+                        >Read more</a
                       >
                     </div>
                   </li>
@@ -870,16 +785,18 @@
                         <a
                           href="./tourism.html"
                           title="Small business employee benefits"
-                          >البسام للسفر والسياحة</a
+                          lng-tag="trttle"
+                          >Al-Bassam Travel & Tourism</a
                         >
                       </h3>
-                      <p>
-                        بدأت شركة البسام للسفر والسياحة طريق عملياتها في عام
-                        1969 ، كعضو معتمد من اتحاد النقل الجوي الدولي. اليوم هو
-                        في المرتبة
+                      <p lng-tag="trdesc">
+                        Al Bassam Travel & Tourism started its operations way
+                        back in the year 1969, as an IATA accredited member.
+                        Today it is ranked
                       </p>
                       <a class="more" href="./tourism.html" title="Learn more"
-                        >اقرأ أكثر</a
+                      lng-tag="learnmore"  
+                      >Read more</a
                       >
                     </div>
                   </li>
@@ -899,15 +816,17 @@
                         <a
                           href="./realest.html"
                           title="Small business employee benefits"
-                          >العقارات</a
+                          lng-tag="realttle"
+                          >Real Estate</a
                         >
                       </h3>
-                      <p>
-                        البسام العقارية تعمل في مجال الاستثمارات خاصة في
-                        المشاريع العقارية داخل وخارج المملكة العربية السعودية.
+                      <p lng-tag="realdesc">
+                        Al-Bassam Real Estate is engaged in investments
+                        particularly in Real Estate projects within and outside
+                        of Saudi Arabia.
                       </p>
                       <a class="more" href="./realest.html" title="Learn more"
-                        >اقرأ أكثر</a
+                        lng-tag="learnmore">Read more</a
                       >
                     </div>
                   </li>
@@ -927,16 +846,17 @@
                         <a
                           href="./yacht.html"
                           title="Small business employee benefits"
-                          >يخوت البسام</a
+                          lng-tag="byttle"
+                          >Al Bassam Yachts</a
                         >
                       </h3>
-                      <p>
-                        البسام لتأجير اليخوت والقوارب للركاب لتأجير القوارب ذ
-                        تأسست في عام 2009 في دبي ، واحدة من الشركات الرائدة شركة
-                        تأجير اليخوت
+                      <p lng-tag="bydesc">
+                        Al Bassam Passenger Yachts & Boat rental L.L.C rental
+                        was established in 2009 in Dubai ,one of the leading
+                        yacht charter company
                       </p>
                       <a class="more" href="./yacht.html" title="Learn more"
-                        >اقرأ أكثر</a
+                       lng-tag="learnmore" >Read more</a
                       >
                     </div>
                   </li>
@@ -956,18 +876,21 @@
                         <a
                           href="./alraya.html"
                           title="Small business employee benefits"
-                          >الراية للشقق الفندقية</a
+                          lng-tag="rhpttle"
+                          >Al Raya Hotel Apartments</a
                         >
                       </h3>
-                      <ul class="simple-list">
-                        <li>
-                          الراية للشقق الفندقية هو نمط شقة قياسي وموقع مركزي في
-                          قلب بر دبي.
-                        </li>
-                        <li>إنه على بعد 10 دقائق فقط من مطار دبى الدولى</li>
-                      </ul>
-                      <a class="more" href="./alraya.html" title="Learn more"
-                        >يتعلم أكثر</a
+                   
+                        <p lng-tag="rhpdesc">
+                          Al Raya Hotel Apartment is a standard Apartment style
+                          & centrally located in the heart of Bur Dubai.
+                          It is only 10 minutes from Dubai International Airport
+
+                        </p>
+                        
+                      
+                      <a class="more" href="./alraya.html" title="Learn more" lng-tag="learnmore"
+                        >Learn more</a
                       >
                     </div>
                   </li>
@@ -977,106 +900,126 @@
             </div>
           </div>
 
-          <div
-            class="row align-center page-margin-top padding-bottom-100"
-          ></div>
+          <div class="row align-center page-margin-top padding-bottom-100">
+            <div class="cuz-flex-st row margin-top-65 padding-bottom-50">
+                          
+                       
+                          <div class="cuz-ct-flex column column-1-4">
+                            <ul class="features-list type-big">
+                              <li>
+                                <div class="content-box">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="63" height="68" viewBox="0 0 63 68">
+                                    <circle fill="#dbb351" opacity="0.21" cx="53" cy="58" r="10"></circle>
+                                    <path data-name="Shape" fill="#dbb351" opacity="0.21" d="M0,5H21A21,21,0,0,1,42,26v0A21,21,0,0,1,21,47h0A21,21,0,0,1,0,26V5A0,0,0,0,1,0,5Z"></path>
+                                    <circle data-name="Shape +" fill="#dbb351" opacity="0.21" cx="44" cy="3" r="3"></circle>
+                                    <foreignObject x="10" y="15" width="48" height="48">
+                                      <span class="features-book"></span>
+                                    </foreignObject>
+                                  </svg>
+                                  <h5 lng-tag="email">Email address</h5>
+                                  <p>
+                                    <a href="mailTo:info@technoserve.com"><span class="__cf_email__" >info@technoserve.com</span></a>
+                                   
+
+                                  </p>
+                             
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          
+                        </div>
+                
+            </div>
         </div>
       </div>
-      <div
-        class="row dark footer-row full-width padding-top-63 padding-bottom-67"
-      >
-        <div class="row row-4-4 cuz-ft-flex">
-          <div class="column column-1-4">
-            <h5>
-              <a href="index.html" title="">
-                <img
-                  src="images/logo-new.png"
-                  srcset="images/albassam logo.jpg"
-                  class="secondary-logo"
-                  alt="logo"
-                />
-              </a>
-            </h5>
-            <p class="margin-top-13">
-              مجموعة البسام هي مجموعة شركات مشهورة ومتنوعة المصالح الصناعية
-              والتجارية. بدأ تاريخها بالتجارة في المعدات البترولية لشركة أرامكو
-              السعودية عام 1955.
-            </p>
-            <div class="margin-top-30">
-              <a class="more style-3" href="" title="Find us on map"
-                >تجدنا على الخريطة</a
-              >
-            </div>
-          </div>
-          <div class="column column-1-4">
-            <h5>المملكة العربية السعودية</h5>
-            <p class="margin-top-13">
-              ص. O Box No 2611، الدمام 31461
-              <br />المملكة العربية السعودية<br /><a
-                href="/cdn-cgi/l/email-protection#a9cedbccccc7dacbc6dbc6e9cfc0c7d9ccc8c287cac6c4"
-                ><span
-                  class="__cf_email__"
-                  data-cfemail="482f3a2d2d263b2a273a27082e2126382d2923662b2725"
-                  >يذهب البريد الإلكتروني هنا</span
-                ></a
-              >
-            </p>
-          </div>
-          <div class="column column-1-4">
-            <h5>ملاحة</h5>
-            <ul class="list simple margin-top-22">
-              <li class="template-right3">
-                <a href="./index-1.html" title="Accounting Office"> الصفحة الرئيسية  </a>
-              </li>
-              <li class="template-right3">
-                <a href="./about-us.html" title="Consulting Office">معلومات عنا</a>
-              </li>
-              <li class="template-right3">
-                <a href="./trading.html" title="Loans and Leasing"
-                  >المنتجات والخدمات</a
-                >
-              </li>
-
-              <li class="template-right3">
-                <a href="./contact.html" title="Our Team">اتصل بنا</a>
-              </li>
-            </ul>
-          </div>
+    <div
+      class="row dark footer-row full-width padding-top-63 padding-bottom-67"
+    >
+      <div class="row row-4-4 cuz-ft-flex">
+        <div class="column column-1-4">
+          <h5>
+            <a href="index.htm?page=home" title="">
+              <img
+                src="images/logo-new.png"
+                srcset="images/albassam logo.jpg"
+                class="secondary-logo"
+                alt="logo"
+              />
+            </a>
+          </h5>
+          <p class="margin-top-13" lng-tag="ftdesc">
+            Albassam Group is a renowned group of companies with diversified
+            industrial & commercial interests. Its history began with trading
+            in petroleum equipment to Saudi Aramco in 1955.
+          </p>
         </div>
-        <div class="row page-padding-top">
-          <ul class="social-icons align-center">
-            <li>
-              <a
-                target="_blank"
-                href=""
-                class="social-facebook"
-                title="facebook"
-              ></a>
+        <div class="column column-1-4">
+          <h5 lng-tag="ftctry">Saudi Arabia</h5>
+          <p class="margin-top-13" lng-tag="location">
+            P . O Box No 2611, Dammam 31461
+            <br />Kingdom of Saudi Arabia<br /><a
+              href="mailTo:info@albassamgroups.com;"
+              ><span
+                class="__cf_email__"
+              
+                >info@albassamgroups.com</span
+              ></a
+            >
+          </p>
+        </div>
+        <div class="column column-1-4">
+          <h5>Navigation</h5>
+          <ul class="list simple margin-top-22">
+            <li class="template-right3">
+              <a href="./index.html" title="Accounting Office" lng-tag="home">Home</a>
             </li>
-            <li>
-              <a
-                target="_blank"
-                href=""
-                class="social-twitter"
-                title="twitter"
-              ></a>
+            <li class="template-right3">
+              <a href="./about-us.html" title="Consulting Office" lng-tag="about">About</a>
             </li>
-            <li>
-              <a href="" class="social-pinterest" title="pinterest"></a>
+            <li class="template-right3">
+              <a href="./trading.html" title="Loans and Leasing" lng-tag="products"
+                >Products & Services</a
+              >
             </li>
-            <li>
-              <a href="" class="social-paypal" title="paypal"></a>
+
+            <li class="template-right3">
+              <a href="./contact.html" title="Our Team" lng-tag="contact">Contact</a>
             </li>
           </ul>
         </div>
-        <div class="row align-center padding-top-34">
-          <span class="copyright"
-            >© حقوق النشر 2023
-            <a href="" title="Al Bassam Group" target="_blank"
-              >مجموعة شركات البسام</a
-            >
-        </div>
+       
       </div>
+      <div class="row page-padding-top">
+        <ul class="social-icons align-center">
+          <li>
+            <a
+              target="_blank"
+              href=""
+              class="social-facebook"
+              title="facebook"
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href=""
+              class="social-twitter"
+              title="twitter"
+            ></a>
+          </li>
+         
+        </ul>
+      </div>
+      <div class="row align-center padding-top-34">
+        <span class="copyright"
+          >© Copyright 2023
+          <a href="" title="Al Bassam Group" target="_blank"
+            >Al Bassam Group Of Companies</a
+          >
+       
+      </div>
+    </div>
     </div>
     <a
       href="#top"
@@ -1090,6 +1033,7 @@
       src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="translate.js"></script>
     <!--slider revolution-->
     <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>

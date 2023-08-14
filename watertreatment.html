@@ -1,20 +1,54 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Al Bassam Group Of Companies - Water Treatment</title>
+    <title>Al Bassam Group -</title>
     <!--meta-->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1.2"
     />
-    <meta name="format-detection" content="telephone=no" />
+
     <meta
       name="keywords"
       content="Business, Finance, Consulting, Accounting, Loans, Optimization, Analyzes, Banking, Audit, Capital, Costs reduction, Employee benefits, Company value"
     />
-    <meta name="description" content="Business Finance Consulting Template" />
-    <!--slider revolution-->
+    <script src="./rs-plugin/js/jquery.themepunch.enablelog.js"></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
+    <!-- bootstrap  -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+    <!-- ends -->
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- ends -->
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" />
     <!--style-->
     <link
@@ -49,8 +83,10 @@
     />
     <link rel="stylesheet" type="text/css" href="fonts/social/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- translator styles -->
+   
   </head>
-  <body class="fp-site-preloader with-topbar">
+  <body class="fp-site-preloader with-topbar"  onload="translate('en','lng-tag')">
     <div
       style="
         position: fixed;
@@ -98,9 +134,8 @@
                 title="youtube"
               ></a>
             </li>
-            <li>
-              <div id="google_translate_element" />
-            </li>
+            <li id="enTranslator">En</li>
+            <li id="arTranslator">Ar</li>
           </ul>
         </div>
         <a href="#" class="header-toggle template-chev-up1"></a>
@@ -110,11 +145,7 @@
         <div class="header with-more-button">
           <div class="logo">
             <h1>
-              <a
-                href="index.htm?page=home"
-                title="Al Bassam Group "
-                translate="no"
-              >
+              <a href="index.html" title="Al Bassam Group " translate="no">
                 <img
                   src="images/albassam logo.jpg"
                   srcset="images/albassam logo.jpg"
@@ -128,10 +159,8 @@
                   alt="logo"
                 />
                 <div class="cuz-logo-desc-flex">
-                  <span class="logo-text notranslate">مجموعة شركات البسام</span>
-                  <span class="logo-text notranslate"
-                    >Al Bassam Group Of Companies</span
-                  >
+                  <span class="logo-text">مجموعة شركات البسام</span>
+                  <span class="logo-text">Al Bassam Group Of Companies</span>
                 </div>
               </a>
             </h1>
@@ -139,54 +168,40 @@
           <div class="menu-container clearfix">
             <nav>
               <ul class="sf-menu">
-                <li class="submenu ">
-                  <a href="index.html" title="Home"> الصفحة الرئيسية </a>
+                <li class="submenu">
+                  <a href="index.html" title="Home" lng-tag="home"> Home </a>
                 </li>
                 <li class="submenu selected">
-                  <a href="trading.html" title="Pages"> المنتجات والخدمات </a>
+                  <a href="trading.html" title="Pages" lng-tag="products"> Products & Services </a>
                   <ul>
                     <li class="submenu">
-                      <a href="" title="About style 1"> AB الطاقة </a>
+                      <a href="" title="About style 1"> AB Energy </a>
                       <ul>
                         <li>
-                          <a
-                            href="techno.html"
-                            class="notranslate"
-                            title="About style 1"
-                          >
-                            Technical Services For Industries – Techno Serve
-                            <span class="notranslate span-ov">
-                              الخـــدمات الفنيــة للصناعــات
-                            </span>
+                          <a href="techno.html" title="About style 1">
+                            Techno Serve
                           </a>
                         </li>
                         <li>
                           <a href="saudioil.html" title="About style 2">
-                            حقل النفط السعودي</a
-                          >
+                            Saudi oil Field
+                          </a>
                         </li>
                       </ul>
                     </li>
                     <li class="submenu">
-                      <a href="" title="Our services style 1"> AB الصناعية </a>
+                      <a href="" title="Our services style 1">
+                        AB Industrial
+                      </a>
                       <ul>
                         <li>
                           <a href="apeco.html" title="Our services style 1">
-                            Salah & Musaad M. Al Bassam Petroleum Equipment Co -
-                            APECO
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركـة صلاح ومساعد محمد البسـام للمعدات البترولية
-                            </span>
+                            Apeco
                           </a>
                         </li>
                         <li>
                           <a href="gulf.html " title="Our services style 2">
-                            Gulf Heavy Industries co - GHI
-                            <br />
-                            <span class="notranslate span-ov">
-                              الخليـج للصناعات الثقيلة
-                            </span>
+                            GHI
                           </a>
                         </li>
                         <li>
@@ -194,19 +209,12 @@
                             href="industrial.html"
                             title="Single service style 1"
                           >
-                            Industrial Support Services Company - ISS
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركة خدمــات المسـانده الصناعيــة
-                            </span>
+                            ISS
                           </a>
                         </li>
                         <li>
-                          <a
-                            href="javascript:void(0);"
-                            title="Single service style 2"
-                          >
-                            شركة الورق
+                          <a href="" title="Single service style 2">
+                            Paper Factory
                           </a>
                         </li>
                         <li>
@@ -214,99 +222,92 @@
                             href="saudiwater.html"
                             title="Single service style 2"
                           >
-                            SAUDI WATER TECHNOLOGY COMPANY
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركــة تقنيــة الميـاه السعوديــة
-                            </span>
+                            Saudi Water Treatment
                           </a>
                         </li>
                         <li>
                           <a href="" title="Single service style 2">
-                            Advanced Laboratories For Testing Materials
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركـة المختبرات المتقدمة لـفـحص المــواد
-                            </span>
+                            Advanced Laboratary For Testing Materials
                           </a>
                         </li>
                       </ul>
                     </li>
                     <li class="submenu">
-                      <a href="" title="Case studies"> المستهلك والعقارات </a>
+                      <a href="" title="Case studies">
+                        Consumer & Real-estate
+                      </a>
                       <ul>
                         <li>
                           <a href="realestate.html" title="Case studies">
-                            REAL ESTATE
-                            <br />
-                            <span class="notranslate span-ov">
-                              الــعقاريـة
-                            </span>
+                            Real Estate
                           </a>
                         </li>
                         <li>
                           <a href="travel.html" title="Single case study">
-                            يسافر
+                            Travel & Tourism
                           </a>
+                        </li>
+                        <li>
+                          <a href="" title="Single case study"> Khobar X </a>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li class="">
-                  <a href="./about-us.html" title="about"> معلومات عنا </a>
+                  <a href="./about-us.html" title="about" lng-tag="about"> About </a>
                 </li>
 
-                <li class="submenu">
-                  <a href="contact.html" title="Case studies"> اتصل بنا </a>
+                <li class="submenu ">
+                  <a href="contact.html" title="Case studies" lng-tag="contact"> Contact </a>
                 </li>
               </ul>
             </nav>
             <div class="mobile-menu-container">
-              <!-- <nav>
+              <nav>
                 <ul class="mobile-menu collapsible-mobile-submenus">
                   <li>
                     <a class="template-big-arrow-horizontal-sm" href="#"
                       >&nbsp;</a
                     >
                   </li>
+                  <li >
+                    <a href="./index.html" title="Home" lng-tag="home"> Home </a>
+                  </li>
+                  <li>
+                    <a href="./about-us.html" title="about" lng-tag="about"> About </a>
+                  </li>
                   <li class="selected">
-                    <a href="./index.html" title="Home"> بيت </a>
-                  </li>
-                  <li>
-                    <a href="./about-us.html" title="about"> عن </a>
-                  </li>
-                  <li>
-                    <a href="./trading.html" title="Pages">
-                      المنتجات والخدمات
+                    <a href="./trading.html" title="Pages" lng-tag="products">
+                      Products & Services
                     </a>
                     <a href="#" class="template-plus3"></a>
                     <ul>
                       <li class="submenu">
-                        <a href="" title="About style 1"> AB الطاقة </a>
+                        <a href="" title="About style 1"> AB Energy </a>
                         <a href="#" class="template-plus3"></a>
                         <ul>
                           <li>
                             <a href="techno.html" title="About style 1">
-                              تكنو سيرف
+                              Techno Serve
                             </a>
                           </li>
                           <li>
-                            <a href="" title="About style 2">
-                              حقل النفط السعودي
+                            <a href="saudioil.html" title="About style 2">
+                              Saudi Oil Field
                             </a>
                           </li>
                         </ul>
                       </li>
                       <li class="submenu">
                         <a href="" title="Our services style 1">
-                          AB الصناعية
+                          AB Industrial
                         </a>
-
+<a href="#" class="template-plus3"></a>
                         <ul>
                           <li>
                             <a href="apeco.html" title="Our services style 1">
-                              ابيكو
+                              APECO
                             </a>
                           </li>
                           <li>
@@ -324,7 +325,7 @@
                           </li>
                           <li>
                             <a href="" title="Single service style 2">
-                              مصنع الورق
+                              Paper Factory
                             </a>
                           </li>
                           <li>
@@ -332,162 +333,12 @@
                               href="saudiwater.html"
                               title="Single service style 2"
                             >
-                              السعودية لمعالجة المياه
+                              Saudi Water Treatment
                             </a>
                           </li>
                           <li>
                             <a href="" title="Single service style 2">
-                              المختبر المتقدم لاختبار المواد
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="submenu">
-                        <a href="" title="About style 1">
-                          المستهلك والعقارات
-                        </a>
-
-                        <ul>
-                          <li>
-                            <a href="realestate.html" title="About style 1">
-                              العقارات
-                            </a>
-                          </li>
-                          <li>
-                            <a href="travel.html" title="About style 2">
-                              رحلة سياحية
-                            </a>
-                          </li>
-                          <li>
-                            <a href="" title="About style 2"> الخبر العاشر </a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a href="./contact.html" title="Contact"> اتصال </a>
-                  </li>
-                  <li>
-                    <a
-                      class="more display-block"
-                      href="index-26.htm?page=bookkeeping_quoting_calculator"
-                      title="Get a quote"
-                      >إقتبس</a
-                    >
-                  </li>
-                </ul>
-
-              
-              </nav> -->
-
-              <nav>
-                <ul class="mobile-menu collapsible-mobile-submenus">
-                  <li>
-                    <a class="template-big-arrow-horizontal-sm" href="#"
-                      >&nbsp;</a
-                    >
-                  </li>
-                  <li >
-                    <a href="./index.html" title="Home"> الصفحة الرئيسية </a>
-                  </li>
-                  <li>
-                    <a href="./about-us.html" title="about"> معلومات عنا </a>
-                  </li>
-                  <li class="selected">
-                    <a href="./trading.html" title="Pages">
-                      Products & Services
-                    </a>
-                    <a href="#" class="template-plus3"></a>
-                    <ul>
-                      <li class="submenu">
-                        <a href="" title="About style 1"> AB Energy </a>
-                        <a href="#" class="template-plus3"></a>
-                        <ul>
-                          <li>
-                            <a
-                              href="techno.html"
-                              class="notranslate"
-                              title="About style 1"
-                            >
-                              Technical Services For Industries – Techno Serve
-                              <span class="notranslate span-ov">
-                                الخـــدمات الفنيــة للصناعــات
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="saudioil.html" title="About style 2">
-                              Saudi Oil Field
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="submenu">
-                        <a href="" title="Our services style 1">
-                          AB Industrial
-                        </a>
-                        <a href="#" class="template-plus3"></a>
-                        <ul>
-                          <li>
-                            <a href="apeco.html" title="Our services style 1">
-                              Salah & Musaad M. Al Bassam Petroleum Equipment Co
-                              - APECO
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركـة صلاح ومساعد محمد البسـام للمعدات البترولية
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="gulf.html" title="Our services style 2">
-                              Gulf Heavy Industries co - GHI
-                              <br />
-                              <span class="notranslate span-ov">
-                                الخليـج للصناعات الثقيلة
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="industrial.html"
-                              title="Single service style 1"
-                            >
-                              Industrial Support Services Company - ISS
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركة خدمــات المسـانده الصناعيــة
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="javascript:void(0);"
-                              title="Single service style 2"
-                            >
-                              Paper co
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="saudiwater.html"
-                              title="Single service style 2"
-                            >
-                              SAUDI WATER TECHNOLOGY COMPANY
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركــة تقنيــة الميـاه السعوديــة
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="" title="Single service style 2">
-                              Advanced Laboratories For Testing Materials
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركـة المختبرات المتقدمة لـفـحص المــواد
-                              </span>
+                              Advanced Laboratary For Testing Materials
                             </a>
                           </li>
                         </ul>
@@ -496,7 +347,7 @@
                         <a href="" title="About style 1">
                           Consumer & Real-estate
                         </a>
-                        <a href="#" class="template-plus3"></a>
+<a href="#" class="template-plus3"></a>
                         <ul>
                           <li>
                             <a href="realestate.html" title="About style 1">
@@ -516,17 +367,10 @@
                     </ul>
                   </li>
 
-                  <li>
-                    <a href="./contact.html" title="Contact"> اتصل بنا </a>
+                  <li class="">
+                    <a href="./contact.html" title="Contact" lng-tag="contact"> Contact </a>
                   </li>
-                  <li>
-                    <a
-                      class="more display-block"
-                      href="contact.html"
-                      title="Get a quote"
-                      >Get a quote</a
-                    >
-                  </li>
+                 
                 </ul>
               </nav>
             </div>
@@ -539,21 +383,24 @@
           </a>
         </div>
       </div>
+
       <div class="theme-page">
         <div class="row full-width page-header">
           <div class="row">
             <div class="bread-crumb-container">
               <ul class="bread-crumb">
                 <li>
-                  <a title="Home" href="index-1.html"> بيت </a>
+                  <a title="Home" href="index.html" lng-tag="home"> Home </a>
                 </li>
                 <li class="separator">&middot;</li>
-                
-               
-                <li>معالجة المياه</li>
+                <li>
+                  <a title="Our services" href="" lng-tag="services"> Our services </a>
+                </li>
+                <li class="separator">&middot;</li>
+                <li lng-tag="wt">Water Treatment</li>
               </ul>
             </div>
-            <h1 class="hl-capitalize">معالجة المياه</h1>
+            <h1 lng-tag="wt">Water Treatment</h1>
           </div>
         </div>
         <div class="clearfix">
@@ -564,66 +411,69 @@
                 class="single-image prettyPhoto fp-preload hover-opacity"
                 title="Strategic and transaction consulting services"
               >
-                <img src="images/samples/480x320/image_05.jpg" alt="img" />
+                <img src="images/image_05.jpg" alt="img" />
               </a>
 
               <div class="mr-top">
                 <table>
                   <tbody>
                     <tr class="header-row">
-                      <th colspan="2">خدمات</th>
+                      <th colspan="2" lng-tag="services">Services</th>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">
-                          أنظمة التناضح العكسي وعمليات الأغشية
+                        <p class="bullet" lng-tag="wt1">
+                          Reverse Osmosis Systems and Membranes Processes
                         </p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">أنظمة التبادل الأيوني</p>
+                        <p class="bullet" lng-tag="wt2">Ion Exchange Systems</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">معدات التوضيح</p>
+                        <p class="bullet" lng-tag="wt3">Clarification Equipment</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">الأشعة فوق البنفسجية والأوزون</p>
+                        <p class="bullet" lng-tag="wt4">Ultraviolet and Ozonation</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">المضخات وأنظمة الجرعات</p>
+                        <p class="bullet" lng-tag="wt5">Pumps and Dosing Systems</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">أنظمة معالجة مياه الصرف الصحي</p>
+                        <p class="bullet" lng-tag="wt6">Waste Water Treatment Systems</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">عقود الصيانة طويلة الأمد</p>
+                        <p class="bullet" lng-tag="wt7">Long-Term Maintenance Contracts</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">جداول الصيانة الوقائية المتكررة</p>
+                        <p class="bullet" lng-tag="wt8">
+                          Frequent Preventive Maintenance Schedules
+                        </p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">دراسات جدوى</p>
+                        <p class="bullet" lng-tag="wt9">Feasibility Studies</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p class="bullet">
-                          تحكم معملي كامل في المياه ومياه الصرف الجودة
+                        <p class="bullet" lng-tag="wt10">
+                          Full Laboratory Control Over Water and Waste water
+                          QualityNDT
                         </p>
                       </td>
                     </tr>
@@ -636,15 +486,13 @@
             <div class="column column-1-3 fp-smart-column">
               <div class="fp-smart-column-wrapper">
                 <ul class="vertical-menu">
-                 <li class="notranslate">
+                  <li class="">
                     <a
-
                       href="trading.html"
                       title="Accounting and tax advisory services"
+                      lng-tag="trading"
                     >
-                    Trading 
-                    <br>
-                      تجارة
+                      Trading
                       <span class="template-right2"></span>
                     </a>
                   </li>
@@ -652,8 +500,9 @@
                     <a
                       href="manufacturing.html"
                       title="Strategic and transaction consulting services"
+                      lng-tag="manufac"
                     >
-                      تصنيع
+                      Manufacturing
                       <span class="template-right2"></span>
                     </a>
                   </li>
@@ -661,8 +510,9 @@
                     <a
                       href="inspection.html"
                       title="Loans and reviews of financial statements"
+                      lng-tag="its"
                     >
-                      خدمات الفحص والاختبار
+                      Inspection & Testing Services
                       <span class="template-right2"></span>
                     </a>
                   </li>
@@ -670,19 +520,19 @@
                     <a
                       href="watertreatment.html"
                       title="Business plans valuations and analyzes"
+                      lng-tag="wt"
                     >
-                      معالجة المياه
+                      Water Treatment
                       <span class="template-right2"></span>
                     </a>
                   </li>
-                 <li class="hl-capitalize notranslate">
+                  <li>
                     <a
                       href="automobiles.html"
                       title="Performance management and improvement"
+                      lng-tag="auto"
                     >
-                    Automobile 
-                    <br>
-                      السيارات
+                      Automobiles
                       <span class="template-right2"></span>
                     </a>
                   </li>
@@ -690,120 +540,175 @@
                     <a
                       href="realestate.html"
                       title="Small business employee benefits"
+                      lng-tag="realestate"
                     >
-                      العقارات
+                      Real Estate
                       <span class="template-right2"></span>
                     </a>
                   </li>
-                   <li class="notranslate ">
+                  <li>
                     <a
                       href="travel.html"
                       title="Small business employee benefits"
+                      lng-tag="travels"
                     >
-                    Travel 
-                    <br>
-                      رحلة سياحية
+                      Travel & Tourism
                       <span class="template-right2"></span>
                     </a>
                   </li>
                 </ul>
-                <h5 class="margin-top-44">عملائنا</h5>
+                <h5 class="margin-top-44" lng-tag="clients">Our Clients</h5>
                 <ul class="blog small margin-top-36 clearfix">
                   <li>
-                    <a href="" title="" class="post-image">
+                    <a
+                      href=""
+                      title="5 reasons why your business needs an expense policy"
+                      class="post-image"
+                    >
                       <img src="images/clients/54.jpg" alt="" />
                     </a>
                     <div class="post-content">
-                      <a href="" title=""
-                        >تأسست الشركة السعودية للكهرباء كشركة مساهمة سعودية مع أ
-                        رأس المال المدفوع 33،758،632،650 ريال سعودي
+                      <a
+                        href=""
+                        title="5 reasons why your business needs an expense policy"
+                        lng-tag="cl1"
+                        >SEC established as a Saudi joint stock company with a
+                        paid-up capital of SR 33,758,632,650
                       </a>
                       <!-- <abbr title="April 10, 2022">April 10, 2022</abbr> -->
                     </div>
                   </li>
                   <li>
-                    <a href="" title="" class="post-image">
+                    <a
+                      href=""
+                      title="6 main differences between an LLC and a corporation"
+                      class="post-image"
+                    >
                       <img src="images/clients/aramco-fin.jpg" alt="" />
                     </a>
                     <div class="post-content">
-                      <a href="" title=""
-                        >أرامكو السعودية ، شركة بترول عالمية ومتكاملة بالكامل
-                        شركة المواد الكيميائية ، هي شركة النفط المملوكة
-                        للدولة</a
+                      <a
+                        href=""
+                        title="6 main differences between an LLC and a corporation"
+                        lng-tag="cl2"
+                        >Saudi Aramco ,a fully integrated, global petroleum and
+                        chemicals enterprise, is the state-owned oil company</a
                       >
                       <!-- <abbr title="March 17, 2022">March 17, 2022</abbr> -->
                     </div>
                   </li>
                   <li>
-                    <a href="" title="" class="post-image">
+                    <a
+                      href=""
+                      title="What you need to know about bookkeeping services"
+                      class="post-image"
+                    >
                       <img src="images/clients/lkfdkd.jpg" alt="" />
                     </a>
                     <div class="post-content">
-                      <a href="" title=""
-                        >Sasref ، في عام 1981 وقعت Pertomin و Shell على اتفاقية
-                        مشتركة اتفاقية إنشاء مجمع مصافي. بناء من المرجع</a
+                      <a
+                        href=""
+                        title="What you need to know about bookkeeping services"
+                        lng-tag="cl3"
+                        >Sasref,In 1981 Pertomin and Shell signed a joint
+                        agreement to establish a refinery complex. Construction
+                        of the ref</a
                       >
                       <!-- <abbr title="March 10, 2022">March 10, 2022</abbr> -->
                     </div>
                   </li>
                   <li>
-                    <a href="" title="" class="post-image">
+                    <a
+                      href=""
+                      title="What you need to know about bookkeeping services"
+                      class="post-image"
+                    >
                       <img src="images/clients/mahindranw.jpg" alt="" />
                     </a>
                     <div class="post-content">
-                      <a href="" title=""
-                        >ماهيندرا ، بدأنا تصنيع الجرارات في وقت مبكر 1960s للسوق
-                        الهندي. بعد ما يقرب من 50 عامًا,</a
+                      <a
+                        href=""
+                        title="What you need to know about bookkeeping services"
+                        lng-tag="cl4"
+                        >Mahindra,We began manufacturing tractors in the early
+                        1960s for the Indian market. Nearly 50 years later,</a
                       >
                       <!-- <abbr title="March 10, 2022">March 10, 2022</abbr> -->
                     </div>
                   </li>
                   <li>
-                    <a href="" title="" class="post-image">
+                    <a
+                      href=""
+                      title="What you need to know about bookkeeping services"
+                      class="post-image"
+                    >
                       <img src="images/clients/rabigh.jpg" alt="" />
                     </a>
                     <div class="post-content">
-                      <a href="" title=""
-                        >تستخدم بترورابك 400 ألف برميل يوميًا من النفط الخام
-                        النفط و 1.2 مليون طن سنويًا من الإيثان مثل أساسي</a
+                      <a
+                        href=""
+                        title="What you need to know about bookkeeping services"
+                        lng-tag="cl5"
+                        >Petro Rabic utilizes 400,000 barrels per day of crude
+                        oil and 1.2 million tons per year of ethane as
+                        primary</a
                       >
                       <!-- <abbr title="March 10, 2022">March 10, 2022</abbr> -->
                     </div>
                   </li>
                   <li>
-                    <a href="" title="" class="post-image">
+                    <a
+                      href=""
+                      title="What you need to know about bookkeeping services"
+                      class="post-image"
+                    >
                       <img src="images/clients/sabic.jpg" alt="" />
                     </a>
                     <div class="post-content">
-                      <a href="" title=""
-                        >سابك هي الشركة السعودية للصناعات الأساسية ، مقرها في
-                        الرياض ، المملكة العربية السعودية.
+                      <a
+                        href=""
+                        title="What you need to know about bookkeeping services"
+                        lng-tag="cl6"
+                        >Sabic is the Saudi Basic Industries Corporation,
+                        headquartered in Riyadh, Saudi Arabia.
                       </a>
                       <!-- <abbr title="March 10, 2022">March 10, 2022</abbr> -->
                     </div>
                   </li>
                   <li>
-                    <a href="" title="" class="post-image">
+                    <a
+                      href=""
+                      title="What you need to know about bookkeeping services"
+                      class="post-image"
+                    >
                       <img src="images/clients/sadranw.jpg" alt="" />
                     </a>
                     <div class="post-content">
-                      <a href="" title=""
-                        >تمثل شركة صدارة للكيميائيات تحالفًا فريدًا من نوعه بين
-                        اثنين من قادة الشركات في كل منهما</a
+                      <a
+                        href=""
+                        title="What you need to know about bookkeeping services"
+                        lng-tag="cl7"
+                        >Sadara Chemical Company represents a unique alliance
+                        between two corporate leaders in their respective</a
                       >
-                      <!-- <abbr title="March 10, 2022">March 10, 2022</abbr> -->
                     </div>
                   </li>
                   <li>
-                    <a href="" title="" class="post-image">
+                    <a
+                      href=""
+                      title="What you need to know about bookkeeping services"
+                      class="post-image"
+                    >
                       <img src="images/clients/sipam2.jpg" alt="" />
                     </a>
                     <div class="post-content">
-                      <a href="" title=""
-                        >Saipem هي شركة كبيرة وعالمية وواحدة من أفضل الشركات
-                        مقاولون تسليم مفتاح متوازن في صناعة النفط والغاز
+                      <a
+                        href=""
+                        title="What you need to know about bookkeeping services"
+                        lng-tag="cl8"
+                        >Saipem is a large, international and one of the best
+                        balanced turnkey contractors in the oil & gas industry
                       </a>
-                      <!-- <abbr title="March 10, 2022">March 10, 2022</abbr> -->
                     </div>
                   </li>
                 </ul>
@@ -813,100 +718,112 @@
         </div>
       </div>
       <div
-        class="row dark footer-row full-width padding-top-63 padding-bottom-67"
-      >
-        <div class="row row-4-4 cuz-ft-flex">
-          <div class="column column-1-4">
-            <h5>
-              <a href="index.html" title="">
-                <img
-                  src="images/logo-new.png"
-                  srcset="images/albassam logo.jpg"
-                  class="secondary-logo"
-                  alt="logo"
-                />
-              </a>
-            </h5>
-            <p class="margin-top-13">
-              مجموعة البسام هي مجموعة شركات مشهورة ومتنوعة المصالح الصناعية
-              والتجارية. بدأ تاريخها بالتجارة في المعدات البترولية لشركة أرامكو
-              السعودية عام 1955.
-            </p>
-            <div class="margin-top-30">
-              <a class="more style-3" href="" title="Find us on map"
-                >تجدنا على الخريطة</a
-              >
-            </div>
-          </div>
-          <div class="column column-1-4">
-            <h5>المملكة العربية السعودية</h5>
-            <p class="margin-top-13">
-              ص. O Box No 2611، الدمام 31461
-              <br />المملكة العربية السعودية<br /><a
-                href="/cdn-cgi/l/email-protection#a9cedbccccc7dacbc6dbc6e9cfc0c7d9ccc8c287cac6c4"
-                ><span
-                  class="__cf_email__"
-                  data-cfemail="482f3a2d2d263b2a273a27082e2126382d2923662b2725"
-                  >يذهب البريد الإلكتروني هنا</span
-                ></a
-              >
-            </p>
-          </div>
-          <div class="column column-1-4">
-            <h5>ملاحة</h5>
-            <ul class="list simple margin-top-22">
-              <li class="template-right3">
-                <a href="./index-1.html" title="Accounting Office"> الصفحة الرئيسية  </a>
-              </li>
-              <li class="template-right3">
-                <a href="./about-us.html" title="Consulting Office">معلومات عنا</a>
-              </li>
-              <li class="template-right3">
-                <a href="./trading.html" title="Loans and Leasing"
-                  >المنتجات والخدمات</a
-                >
-              </li>
-
-              <li class="template-right3">
-                <a href="./contact.html" title="Our Team">اتصل بنا</a>
-              </li>
-            </ul>
-          </div>
+      class="row dark footer-row full-width padding-top-63 padding-bottom-67"
+    >
+      <div class="row row-4-4 cuz-ft-flex">
+        <div class="column column-1-4">
+          <h5>
+            <a href="index-1.htm?page=home" title="">
+              <img
+                src="images/logo-new.png"
+                srcset="images/albassam logo.jpg"
+                class="secondary-logo"
+                alt="logo"
+              />
+            </a>
+          </h5>
+          <p class="margin-top-13" lng-tag="ftdesc">
+            Albassam Group is a renowned group of companies with diversified
+            industrial & commercial interests. Its history began with trading
+            in petroleum equipment to Saudi Aramco in 1955.
+          </p>
         </div>
-        <div class="row page-padding-top">
-          <ul class="social-icons align-center">
-            <li>
-              <a
-                target="_blank"
-                href=""
-                class="social-facebook"
-                title="facebook"
-              ></a>
+        <div class="column column-1-4">
+          <h5 lng-tag="ftctry">Saudi Arabia</h5>
+          <p class="margin-top-13" lng-tag="location">
+            P . O Box No 2611, Dammam 31461
+            <br />Kingdom of Saudi Arabia<br /><a
+              href="mailTo:info@albassamgroups.com"
+              ><span
+                class="__cf_email__"
+    
+                >info@albassamgroups.com</span
+              ></a
+            >
+          </p>
+        </div>
+        <div class="column column-1-4">
+          <h5>Navigation</h5>
+          <ul class="list simple margin-top-22">
+            <li class="template-right3">
+              <a href="./index.html" title="Accounting Office" lng-tag="home">Home</a>
             </li>
-            <li>
-              <a
-                target="_blank"
-                href=""
-                class="social-twitter"
-                title="twitter"
-              ></a>
+            <li class="template-right3">
+              <a href="./about-us.html" title="Consulting Office" lng-tag="about">About</a>
             </li>
-            <li>
-              <a href="" class="social-pinterest" title="pinterest"></a>
+            <li class="template-right3">
+              <a href="./trading.html" title="Loans and Leasing" lng-tag="products"
+                >Products & Services</a
+              >
             </li>
-            <li>
-              <a href="" class="social-paypal" title="paypal"></a>
+
+            <li class="template-right3">
+              <a href="./contact.html" title="Our Team" lng-tag="contact">Contact</a>
             </li>
           </ul>
         </div>
-        <div class="row align-center padding-top-34">
-          <span class="copyright"
-            >© حقوق النشر 2023
-            <a href="" title="Al Bassam Group" target="_blank"
-              >مجموعة شركات البسام</a
-            >
-        </div>
+        <!-- <div class="column column-1-4">
+<h5>Latest News</h5>
+<ul class="latest-post margin-top-29">
+<li>
+<a
+href="index-32.htm?page=post"
+title="5 reasons why your business needs an expense policy"
+>5 reasons why your business needs an expense policy</a
+>
+<abbr title="April 10, 2022">April 10, 2022</abbr>
+</li>
+<li>
+<a
+href="index-32.htm?page=post"
+title="6 main differences between an LLC and a corporation"
+>6 main differences between an LLC and a corporation</a
+>
+<abbr title="March 17, 2022">March 17, 2022</abbr>
+</li>
+</ul>
+</div> -->
       </div>
+      <div class="row page-padding-top">
+        <ul class="social-icons align-center">
+          <li>
+            <a
+              target="_blank"
+              href=""
+              class="social-facebook"
+              title="facebook"
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href=""
+              class="social-twitter"
+              title="twitter"
+            ></a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="row align-center padding-top-34">
+        <span class="copyright"
+          >© Copyright 2023
+          <a href="" title="Al Bassam Group" target="_blank"
+            >Al Bassam Group Of Companies</a
+          >
+          
+      </div>
+    </div>
     </div>
     <a
       href="#top"
@@ -920,6 +837,7 @@
       src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="translate.js"></script>
     <!--slider revolution-->
     <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>

@@ -1,20 +1,54 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Al Bassam Group Of Companies</title>
+    <title>Al Bassam Group -</title>
     <!--meta-->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1.2"
     />
-    <meta name="format-detection" content="telephone=no" />
+
     <meta
       name="keywords"
       content="Business, Finance, Consulting, Accounting, Loans, Optimization, Analyzes, Banking, Audit, Capital, Costs reduction, Employee benefits, Company value"
     />
-    <meta name="description" content="Business Finance Consulting Template" />
-    <!--slider revolution-->
+    <script src="./rs-plugin/js/jquery.themepunch.enablelog.js"></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
+    <!-- bootstrap  -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+    <!-- ends -->
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- ends -->
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" />
     <!--style-->
     <link
@@ -49,8 +83,9 @@
     />
     <link rel="stylesheet" type="text/css" href="fonts/social/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
+   
   </head>
-  <body class="fp-site-preloader with-topbar">
+  <body class="fp-site-preloader with-topbar" id="page-top" onload="translate('en','lng-tag')">
     <div
       style="
         position: fixed;
@@ -70,7 +105,7 @@
       <div class="fp-preloader-spinner"></div>
     </div>
     <div class="site-container">
-      <div class="header-top-bar-container clearfix">
+  <div class="header-top-bar-container clearfix">
         <div class="header-top-bar">
           <ul class="contact-details clearfix">
             <li class="template-location1">
@@ -98,9 +133,8 @@
                 title="youtube"
               ></a>
             </li>
-            <li>
-              <div id="google_translate_element" />
-            </li>
+            <li id="enTranslator">En</li>
+            <li id="arTranslator">Ar</li>
           </ul>
         </div>
         <a href="#" class="header-toggle template-chev-up1"></a>
@@ -110,11 +144,7 @@
         <div class="header with-more-button">
           <div class="logo">
             <h1>
-              <a
-                href="index.htm?page=home"
-                title="Al Bassam Group "
-                translate="no"
-              >
+              <a href="index.html" title="Al Bassam Group " translate="no">
                 <img
                   src="images/albassam logo.jpg"
                   srcset="images/albassam logo.jpg"
@@ -128,10 +158,8 @@
                   alt="logo"
                 />
                 <div class="cuz-logo-desc-flex">
-                  <span class="logo-text notranslate">مجموعة شركات البسام</span>
-                  <span class="logo-text notranslate"
-                    >Al Bassam Group Of Companies</span
-                  >
+                  <span class="logo-text">مجموعة شركات البسام</span>
+                  <span class="logo-text">Al Bassam Group Of Companies</span>
                 </div>
               </a>
             </h1>
@@ -140,53 +168,39 @@
             <nav>
               <ul class="sf-menu">
                 <li class="submenu">
-                  <a href="index.html" title="Home"> الصفحة الرئيسية </a>
+                  <a href="index.html" title="Home" lng-tag="home"> Home </a>
                 </li>
                 <li class="submenu">
-                  <a href="trading.html" title="Pages"> المنتجات والخدمات </a>
+                  <a href="trading.html" title="Pages" lng-tag="products"> Products & Services </a>
                   <ul>
                     <li class="submenu">
-                      <a href="" title="About style 1"> AB الطاقة </a>
+                      <a href="" title="About style 1"> AB Energy </a>
                       <ul>
                         <li>
-                          <a
-                            href="techno.html"
-                            class="notranslate"
-                            title="About style 1"
-                          >
-                            Technical Services For Industries – Techno Serve
-                            <span class="notranslate span-ov">
-                              الخـــدمات الفنيــة للصناعــات
-                            </span>
+                          <a href="techno.html" title="About style 1">
+                            Techno Serve
                           </a>
                         </li>
                         <li>
                           <a href="saudioil.html" title="About style 2">
-                            حقل النفط السعودي</a
-                          >
+                            Saudi oil Field
+                          </a>
                         </li>
                       </ul>
                     </li>
                     <li class="submenu">
-                      <a href="" title="Our services style 1"> AB الصناعية </a>
+                      <a href="" title="Our services style 1">
+                        AB Industrial
+                      </a>
                       <ul>
                         <li>
                           <a href="apeco.html" title="Our services style 1">
-                            Salah & Musaad M. Al Bassam Petroleum Equipment Co -
-                            APECO
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركـة صلاح ومساعد محمد البسـام للمعدات البترولية
-                            </span>
+                            Apeco
                           </a>
                         </li>
                         <li>
                           <a href="gulf.html " title="Our services style 2">
-                            Gulf Heavy Industries co - GHI
-                            <br />
-                            <span class="notranslate span-ov">
-                              الخليـج للصناعات الثقيلة
-                            </span>
+                            GHI
                           </a>
                         </li>
                         <li>
@@ -194,19 +208,12 @@
                             href="industrial.html"
                             title="Single service style 1"
                           >
-                            Industrial Support Services Company - ISS
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركة خدمــات المسـانده الصناعيــة
-                            </span>
+                            ISS
                           </a>
                         </li>
                         <li>
-                          <a
-                            href="javascript:void(0);"
-                            title="Single service style 2"
-                          >
-                            شركة الورق
+                          <a href="" title="Single service style 2">
+                            Paper Factory
                           </a>
                         </li>
                         <li>
@@ -214,51 +221,44 @@
                             href="saudiwater.html"
                             title="Single service style 2"
                           >
-                            SAUDI WATER TECHNOLOGY COMPANY
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركــة تقنيــة الميـاه السعوديــة
-                            </span>
+                            Saudi Water Treatment
                           </a>
                         </li>
                         <li>
                           <a href="" title="Single service style 2">
-                            Advanced Laboratories For Testing Materials
-                            <br />
-                            <span class="notranslate span-ov">
-                              شركـة المختبرات المتقدمة لـفـحص المــواد
-                            </span>
+                            Advanced Laboratary For Testing Materials
                           </a>
                         </li>
                       </ul>
                     </li>
                     <li class="submenu">
-                      <a href="" title="Case studies"> المستهلك والعقارات </a>
+                      <a href="" title="Case studies">
+                        Consumer & Real-estate
+                      </a>
                       <ul>
                         <li>
                           <a href="realestate.html" title="Case studies">
-                            REAL ESTATE
-                            <br />
-                            <span class="notranslate span-ov">
-                              الــعقاريـة
-                            </span>
+                            Real Estate
                           </a>
                         </li>
                         <li>
                           <a href="travel.html" title="Single case study">
-                            يسافر
+                            Travel & Tourism
                           </a>
+                        </li>
+                        <li>
+                          <a href="" title="Single case study"> Khobar X </a>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="./about-us.html" title="about"> معلومات عنا </a>
+                <li class="">
+                  <a href="./about-us.html" title="about" lng-tag="about"> About </a>
                 </li>
 
                 <li class="submenu selected">
-                  <a href="contact.html" title="Case studies"> اتصل بنا </a>
+                  <a href="contact.html" title="Case studies" lng-tag="contact"> Contact </a>
                 </li>
               </ul>
             </nav>
@@ -270,14 +270,14 @@
                       >&nbsp;</a
                     >
                   </li>
-                  <li class="">
-                    <a href="./index.html" title="Home"> الصفحة الرئيسية </a>
+                  <li >
+                    <a href="./index.html" title="Home" lng-tag="home"> Home </a>
                   </li>
                   <li>
-                    <a href="./about-us.html" title="about"> معلومات عنا </a>
+                    <a href="./about-us.html" title="about" lng-tag="about"> About </a>
                   </li>
                   <li>
-                    <a href="./trading.html" title="Pages">
+                    <a href="./trading.html" title="Pages" lng-tag="products">
                       Products & Services
                     </a>
                     <a href="#" class="template-plus3"></a>
@@ -287,24 +287,13 @@
                         <a href="#" class="template-plus3"></a>
                         <ul>
                           <li>
-                            <a
-                              href="techno.html"
-                              class="notranslate"
-                              title="About style 1"
-                            >
-                              Technical Services For Industries – Techno Serve
-                              <span class="notranslate span-ov">
-                                الخـــدمات الفنيــة للصناعــات
-                              </span>
+                            <a href="techno.html" title="About style 1">
+                              Techno Serve
                             </a>
                           </li>
                           <li>
                             <a href="saudioil.html" title="About style 2">
                               Saudi Oil Field
-                              <br />
-                              <span class="notranslate span-ov">
-                                حقل نفط سعودي
-                              </span>
                             </a>
                           </li>
                         </ul>
@@ -313,25 +302,16 @@
                         <a href="" title="Our services style 1">
                           AB Industrial
                         </a>
-                        <a href="#" class="template-plus3"></a>
+<a href="#" class="template-plus3"></a>
                         <ul>
                           <li>
                             <a href="apeco.html" title="Our services style 1">
-                              Salah & Musaad M. Al Bassam Petroleum Equipment Co
-                              - APECO
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركـة صلاح ومساعد محمد البسـام للمعدات البترولية
-                              </span>
+                              APECO
                             </a>
                           </li>
                           <li>
                             <a href="gulf.html" title="Our services style 2">
-                              Gulf Heavy Industries co - GHI
-                              <br />
-                              <span class="notranslate span-ov">
-                                الخليـج للصناعات الثقيلة
-                              </span>
+                              GHI
                             </a>
                           </li>
                           <li>
@@ -339,19 +319,12 @@
                               href="industrial.html"
                               title="Single service style 1"
                             >
-                              Industrial Support Services Company - ISS
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركة خدمــات المسـانده الصناعيــة
-                              </span>
+                              ISS
                             </a>
                           </li>
                           <li>
-                            <a
-                              href="javascript:void(0);"
-                              title="Single service style 2"
-                            >
-                              Paper co
+                            <a href="" title="Single service style 2">
+                              Paper Factory
                             </a>
                           </li>
                           <li>
@@ -359,39 +332,34 @@
                               href="saudiwater.html"
                               title="Single service style 2"
                             >
-                              SAUDI WATER TECHNOLOGY COMPANY
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركــة تقنيــة الميـاه السعوديــة
-                              </span>
+                              Saudi Water Treatment
                             </a>
                           </li>
                           <li>
                             <a href="" title="Single service style 2">
-                              Advanced Laboratories For Testing Materials
-                              <br />
-                              <span class="notranslate span-ov">
-                                شركـة المختبرات المتقدمة لـفـحص المــواد
-                              </span>
+                              Advanced Laboratary For Testing Materials
                             </a>
                           </li>
                         </ul>
                       </li>
                       <li class="submenu">
                         <a href="" title="About style 1">
-                          المستهلك والعقارات
+                          Consumer & Real-estate
                         </a>
-                        <a href="#" class="template-plus3"></a>
+<a href="#" class="template-plus3"></a>
                         <ul>
                           <li>
                             <a href="realestate.html" title="About style 1">
-                              العقارات
+                              Real Estate
                             </a>
                           </li>
                           <li>
                             <a href="travel.html" title="About style 2">
-                              يسافر
+                              Travel & Tourism
                             </a>
+                          </li>
+                          <li>
+                            <a href="" title="About style 2"> Khobar X </a>
                           </li>
                         </ul>
                       </li>
@@ -399,16 +367,9 @@
                   </li>
 
                   <li class="selected">
-                    <a href="./contact.html" title="Contact"> اتصل بنا </a>
+                    <a href="./contact.html" title="Contact" lng-tag="contact"> Contact </a>
                   </li>
-                  <li>
-                    <a
-                      class="more display-block"
-                      href="contact.html"
-                      title="Get a quote"
-                      >Get a quote</a
-                    >
-                  </li>
+                 
                 </ul>
               </nav>
             </div>
@@ -421,29 +382,30 @@
           </a>
         </div>
       </div>
+
       <div class="theme-page">
         <div
-          class="row full-width page-header header-background header-background-8 fp-overlay"
+          class="row full-width page-header header-background header-background-1 fp-overlay"
         >
           <div class="row">
             <div class="bread-crumb-container">
               <ul class="bread-crumb">
                 <li>
-                  <a title="Home" href="index-1.html"> بيت </a>
+                  <a title="Home" href="index.html" lng-tag="home"> Home </a>
                 </li>
                 <li class="separator">&middot;</li>
-                <li>اتصل بنا</li>
+                <li lng-tag="contact">Contact Us</li>
               </ul>
             </div>
-            <h1 class="hl-capitalize">اتصل بنا</h1>
+            <h1 lng-tag="contact">Contact Us</h1>
           </div>
         </div>
         <div class="clearfix">
           <div class="row gray full-width padding-bottom-100">
             <div class="row padding-top-95">
-              <label class="box-header align-center">اتصل بنا</label>
-              <h2 class="box-header align-center margin-top-15">
-                سوف نساعدك على الاسترخاء في عملك
+              <label class="box-header align-center" lng-tag="contact">CONTACT US</label>
+              <h2 class="box-header align-center margin-top-15" lng-tag="contdesc">
+                We will help you unwind your business
               </h2>
             </div>
             <div class="cuz-flex-st row margin-top-65 padding-bottom-50">
@@ -482,12 +444,12 @@
                           <span class="features-location-2"></span>
                         </foreignobject>
                       </svg>
-                      <h5>عنواننا</h5>
-                      <p>
-                        ص. O Box No 2611،
+                      <h5 lng-tag="add">Our address</h5>
+                      <p lng-tag="location">
+                        P . O Box No 2611,
                         <br />
-                        الدمام 31461<br />
-                        المملكة العربية السعودية
+                        Dammam 31461<br />
+                        Kingdom of Saudi Arabia
                       </p>
                     </div>
                   </li>
@@ -528,7 +490,7 @@
                           <span class="features-phone-2"></span>
                         </foreignobject>
                       </svg>
-                      <h5>أرقام الهواتف</h5>
+                      <h5 lng-tag="phone">Phone numbers</h5>
                       <p>
                         Tel: <a href="tel:+966138051313">+966138051313</a><br />
                         Fax: <a href="tel:+966138053110">+966138053110</a><br />
@@ -572,13 +534,12 @@
                           <span class="features-book"></span>
                         </foreignobject>
                       </svg>
-                      <h5>عنوان البريد الإلكتروني</h5>
+                      <h5 lng-tag="email">Email address</h5>
                       <p>
                         <a
-                          href="mailto:info@albassamgroups.com"
+                          href="mailTo:info@albassamgroups.com"
                           ><span
                             class="__cf_email__"
-                            data-cfemail="8aedf8efefe4f9e8e5f8e5caece3e4faefebe1a4e9e5e7"
                             >info@albassamgroups.com</span
                           ></a
                         >
@@ -622,7 +583,7 @@
                           <span class="features-check"></span>
                         </foreignobject>
                       </svg>
-                      <h5>ساعات العمل</h5>
+                      <h5 lng-tag="bsshr">Business hours</h5>
                       <p>
                         Mon - Fri: 8:00 am - 5:00 pm<br />
                         Saturday: closed<br />
@@ -648,22 +609,24 @@
             </div>
             <div class="column column-1-2 padding-top-95 padding-bottom-100">
               <div class="row padding-left-right-100">
-                <label class="box-header">لنتحدث</label>
-                <h2 class="box-header margin-top-15">تواصل مع فريقنا</h2>
-                <p class="margin-top-23">
-                  استخدم النموذج أدناه للتواصل مع فريقنا. سوف نعود لكم في غضون
-                  24 ساعة.
+                <!-- <label class="box-header" lng-tag="talk">LET'S TALK</label> -->
+                <h2 class="box-header margin-top-15" lng-tag="talk">
+                  LET'S TALK
+                </h2>
+                <!-- <p class="margin-top-23">
+                  Use the form below to contact with our team. We will get back
+                  to you within 24 hours.
                 </p>
                 <form
                   class="contact-form margin-top-30"
                   id="contact-form"
                   method="post"
-                  action="contact_form/contact_form.php"
+                  action=""
                 >
                   <div class="row flex-box">
                     <fieldset class="column column-1-2">
                       <div class="border-container">
-                        <label>اسم *</label>
+                        <label>Name *</label>
                         <input
                           class="text-input"
                           name="name"
@@ -676,7 +639,7 @@
                     </fieldset>
                     <fieldset class="column column-1-2">
                       <div class="border-container">
-                        <label>بريد إلكتروني *</label>
+                        <label>Email *</label>
                         <input
                           class="text-input"
                           name="email"
@@ -688,11 +651,10 @@
                       </div>
                     </fieldset>
                   </div>
-                 
                   <div class="row flex-box">
-                    <fieldset class="column column-1-1">
+                    <fieldset class="column column-1-2">
                       <div class="border-container">
-                        <label>هاتف</label>
+                        <label>Phone</label>
                         <input
                           class="text-input"
                           name="phone"
@@ -702,11 +664,30 @@
                         />
                       </div>
                     </fieldset>
+                    <fieldset class="column column-1-2">
+                      <div class="border-container">
+                        <label>Subject</label>
+                        <select
+                          name="subject"
+                          id="subject"
+                          class="cost-dropdown"
+                        >
+                          <option value="" selected="selected">
+                            Choose...
+                          </option>
+                          <option value="Business Consulting">services</option>
+                          <option value="Accounting Office">services</option>
+                          <option value="Loans and Leasing">
+                            Loans services
+                          </option>
+                        </select>
+                      </div>
+                    </fieldset>
                   </div>
                   <div class="row flex-box">
                     <fieldset class="column column-1-1">
                       <div class="border-container">
-                        <label>رسالة *</label>
+                        <label>Message *</label>
                         <textarea
                           name="message"
                           placeholder="Hi there..."
@@ -722,11 +703,11 @@
                         class="more submit-contact-form"
                         href="#"
                         title="Submit now"
-                        >أرسل الآن</a
+                        >Submit now</a
                       >
                     </div>
                   </fieldset>
-                </form>
+                </form> -->
               </div>
             </div>
           </div>
@@ -747,51 +728,48 @@
                 />
               </a>
             </h5>
-            <p class="margin-top-13">
-              مجموعة البسام هي مجموعة شركات مشهورة ومتنوعة المصالح الصناعية
-              والتجارية. بدأ تاريخها بالتجارة في المعدات البترولية لشركة أرامكو
-              السعودية عام 1955.
+            <p class="margin-top-13" lng-tag="ftdesc">
+              Albassam Group is a renowned group of companies with diversified
+              industrial & commercial interests. Its history began with trading
+              in petroleum equipment to Saudi Aramco in 1955.
             </p>
-            <div class="margin-top-30">
-              <a class="more style-3" href="" title="Find us on map"
-                >تجدنا على الخريطة</a
-              >
-            </div>
           </div>
           <div class="column column-1-4">
-            <h5>المملكة العربية السعودية</h5>
-            <p class="margin-top-13">
-              ص. O Box No 2611، الدمام 31461
-              <br />المملكة العربية السعودية<br /><a
-                href="/cdn-cgi/l/email-protection#a9cedbccccc7dacbc6dbc6e9cfc0c7d9ccc8c287cac6c4"
+            <h5 lng-tag="ftctry">Saudi Arabia</h5>
+            <p class="margin-top-13" lng-tag="location">
+              P . O Box No 2611, Dammam 31461
+              <br />Kingdom of Saudi Arabia<br /><a
+                href="mailTo:info@albassamgroups.com"
                 ><span
                   class="__cf_email__"
-                  data-cfemail="482f3a2d2d263b2a273a27082e2126382d2923662b2725"
-                  >يذهب البريد الإلكتروني هنا</span
+                  
+                  >
+                  info@albassamgroups.com</span
                 ></a
               >
             </p>
           </div>
           <div class="column column-1-4">
-            <h5>ملاحة</h5>
+            <h5>Navigation</h5>
             <ul class="list simple margin-top-22">
               <li class="template-right3">
-                <a href="./index-1.html" title="Accounting Office"> الصفحة الرئيسية  </a>
+                <a href="./index.html" title="Accounting Office" lng-tag="home">Home</a>
               </li>
               <li class="template-right3">
-                <a href="./about-us.html" title="Consulting Office">معلومات عنا</a>
+                <a href="./about-us.html" title="Consulting Office" lng-tag="about">About</a>
               </li>
               <li class="template-right3">
-                <a href="./trading.html" title="Loans and Leasing"
-                  >المنتجات والخدمات</a
+                <a href="./trading.html" title="Loans and Leasing" lng-tag='products'
+                  >Products & Services</a
                 >
               </li>
 
               <li class="template-right3">
-                <a href="./contact.html" title="Our Team">اتصل بنا</a>
+                <a href="./contact.html" title="Our Team" lng-tag="contact">Contact</a>
               </li>
             </ul>
           </div>
+         
         </div>
         <div class="row page-padding-top">
           <ul class="social-icons align-center">
@@ -811,20 +789,16 @@
                 title="twitter"
               ></a>
             </li>
-            <li>
-              <a href="" class="social-pinterest" title="pinterest"></a>
-            </li>
-            <li>
-              <a href="" class="social-paypal" title="paypal"></a>
-            </li>
+            
           </ul>
         </div>
         <div class="row align-center padding-top-34">
           <span class="copyright"
-            >© حقوق النشر 2023
+            >© Copyright 2023
             <a href="" title="Al Bassam Group" target="_blank"
-              >مجموعة شركات البسام</a
+              >Al Bassam Group Of Companies</a
             >
+           
         </div>
       </div>
     </div>
@@ -840,6 +814,7 @@
       src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./translate.js"></script>
     <!--slider revolution-->
     <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
