@@ -13,7 +13,9 @@
       name="keywords"
       content="Business, Finance, Consulting, Accounting, Loans, Optimization, Analyzes, Banking, Audit, Capital, Costs reduction, Employee benefits, Company value"
     />
-    <script src="./rs-plugin/js/jquery.themepunch.enablelog.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- <script src="./rs-plugin/js/jquery.themepunch.enablelog.js"></script>
     <script
       type="text/javascript"
       src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"
@@ -25,7 +27,7 @@
     <script
       type="text/javascript"
       src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"
-    ></script>
+    ></script> -->
     <!-- font awesome cdn  -->
     <link
       rel="stylesheet"
@@ -44,14 +46,14 @@
     /> -->
     <!-- ends -->
     <!-- swiper css -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    /> -->
     <!-- ends -->
-    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" /> -->
     <!--style-->
-    <link
+    <!-- <link
       href="../../css?family=Nunito+Sans:300,400,600&amp;subset=latin-ext"
       rel="stylesheet"
       type="text/css"
@@ -60,7 +62,7 @@
       href="../../css-1?family=Montserrat:500,600&amp;subset=latin-ext"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
     <link rel="stylesheet" type="text/css" href="style/reset.css" />
     <link rel="stylesheet" type="text/css" href="style/superfish.css" />
     <link rel="stylesheet" type="text/css" href="style/prettyPhoto.css" />
@@ -83,6 +85,11 @@
     />
     <link rel="stylesheet" type="text/css" href="fonts/social/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
+
+    <!-- splider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css" integrity="sha512-cSogJ0h5p3lhb//GYQRKsQAiwRku2tKOw/Rgvba47vg0+iOFrQ94iQbmAvRPF5+qkF8+gT7XBct233jFg1cBaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css" integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ends -->
   
   </head>
 <body class="fp-site-preloader with-topbar"  onload="translate('en','lng-tag')">
@@ -900,39 +907,107 @@
             </div>
           </div>
 
-          <div class="row align-center page-margin-top padding-bottom-100">
-            <div class="cuz-flex-st row margin-top-65 padding-bottom-50">
-                          
-                       
-                          <div class="cuz-ct-flex column column-1-4">
-                            <ul class="features-list type-big">
-                              <li>
-                                <div class="content-box">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="63" height="68" viewBox="0 0 63 68">
-                                    <circle fill="#dbb351" opacity="0.21" cx="53" cy="58" r="10"></circle>
-                                    <path data-name="Shape" fill="#dbb351" opacity="0.21" d="M0,5H21A21,21,0,0,1,42,26v0A21,21,0,0,1,21,47h0A21,21,0,0,1,0,26V5A0,0,0,0,1,0,5Z"></path>
-                                    <circle data-name="Shape +" fill="#dbb351" opacity="0.21" cx="44" cy="3" r="3"></circle>
-                                    <foreignObject x="10" y="15" width="48" height="48">
-                                      <span class="features-book"></span>
-                                    </foreignObject>
-                                  </svg>
-                                  <h5 lng-tag="email">Email address</h5>
-                                  <p>
-                                    <a href="mailTo:info@technoserve.com"><span class="__cf_email__" >info@technoserve.com</span></a>
-                                   
-
-                                  </p>
-                             
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                          
-                        </div>
-                
+          <div class="cuz-flex-st row margin-top-65 padding-bottom-50 js-al-center">
+            <div class="cuz-ct-flex column column-1-4">
+              <ul class="features-list type-big">
+                <li>
+                  <div class="content-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="63" height="68" viewBox="0 0 63 68">
+                      <circle fill="#dbb351" opacity="0.21" cx="53" cy="58" r="10"></circle>
+                      <path data-name="Shape" fill="#dbb351" opacity="0.21" d="M0,5H21A21,21,0,0,1,42,26v0A21,21,0,0,1,21,47h0A21,21,0,0,1,0,26V5A0,0,0,0,1,0,5Z"></path>
+                      <circle data-name="Shape +" fill="#dbb351" opacity="0.21" cx="44" cy="3" r="3"></circle>
+                      <foreignObject x="10" y="15" width="48" height="48">
+                        <span class="features-location-2"></span>
+                      </foreignObject>
+                    </svg>
+                    <h5 lng-tag="add">Our Address</h5>
+                    <p lng-tag="loctech">Jubail Dhahran highway | Opposite to Dammam Television Complex
+                      Post Box 1848 | Dammam 31441 | KSA
+                      </p>
+                  </div>
+                </li>
+              </ul>
             </div>
+            <div class="cuz-ct-flex column column-1-4">
+              <ul class="features-list type-big">
+                <li>
+                  <div class="content-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="63" height="68" viewBox="0 0 63 68">
+                      <circle fill="#dbb351" opacity="0.21" cx="53" cy="58" r="10"></circle>
+                      <path data-name="Shape" fill="#dbb351" opacity="0.21" d="M0,5H21A21,21,0,0,1,42,26v0A21,21,0,0,1,21,47h0A21,21,0,0,1,0,26V5A0,0,0,0,1,0,5Z"></path>
+                      <circle data-name="Shape +" fill="#dbb351" opacity="0.21" cx="44" cy="3" r="3"></circle>
+                      <foreignObject x="10" y="15" width="48" height="48">
+                        <span class="features-phone-2"></span>
+                      </foreignObject>
+                    </svg>
+                    <h5 lng-tag="phone">Phone Numbers</h5>
+                    <p>
+                      Tel: <a href="tel:+966138151677">+966138151677</a><br>
+                      Fax: <a href="tel:+966138410413">+966138410413</a><br>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="cuz-ct-flex column column-1-4">
+              <ul class="features-list type-big">
+                <li>
+                  <div class="content-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="63" height="68" viewBox="0 0 63 68">
+                      <circle fill="#dbb351" opacity="0.21" cx="53" cy="58" r="10"></circle>
+                      <path data-name="Shape" fill="#dbb351" opacity="0.21" d="M0,5H21A21,21,0,0,1,42,26v0A21,21,0,0,1,21,47h0A21,21,0,0,1,0,26V5A0,0,0,0,1,0,5Z"></path>
+                      <circle data-name="Shape +" fill="#dbb351" opacity="0.21" cx="44" cy="3" r="3"></circle>
+                      <foreignObject x="10" y="15" width="48" height="48">
+                        <span class="features-book"></span>
+                      </foreignObject>
+                    </svg>
+                    <h5 lng-tag="email">Email Address</h5>
+                    <p>
+                      <a href="mailTo:info@technoserveco.com"><span class="__cf_email__">info@technoserveco.com</span></a>
+                      <a href="mailTo:gm@technoserveco.com"><span class="__cf_email__">gm@technoserveco.com</span></a>
+                      <a href="mailTo:sales@technoserveco.com"><span class="__cf_email__">sales@technoserveco.com</span></a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
         </div>
       </div>
+      <section id="outer-slider" class="splide sec-outer-bg" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+            <div id="nested-slider" class="splide cuz-sec-splide" aria-label="Beautiful Images">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide" style="width: 150px"><img src="./images/certificate/tech/API 16A.jpg" alt=""></li>
+                  <li class="splide__slide" style="width: 250px"> <img src="./images/certificate/tech/API 16A.jpg" alt=""></li>
+                  <li class="splide__slide" style="width: 200px"><img src="./images/certificate/tech/API 16A.jpg" alt=""></li>
+                </ul>
+              </div>
+            </div>
+
+            </li>
+            <li class="splide__slide">
+              <img src="./images/certificate/tech/API 5CT.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/certificate/tech/API 6A.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/certificate/tech/API 7-1.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/certificate/tech/API Q1.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/certificate/tech/ISO 9001-2015 (TUV).jpg" alt="">
+            </li>
+          </ul>
+        </div>
+      </section>
     <div
       class="row dark footer-row full-width padding-top-63 padding-bottom-67"
     >
@@ -1028,12 +1103,13 @@
     ></a>
 
     <!--js-->
-    <script
+    <!-- <script
       data-cfasync="false"
       src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    ></script> -->
     <script src="translate.js"></script>
+    <script src="./js/splide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--slider revolution-->
     <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>

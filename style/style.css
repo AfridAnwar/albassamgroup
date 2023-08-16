@@ -6171,8 +6171,37 @@ body.lock-position
 	
 }
 /* ends */
-
 /* helper  */
+.splide__slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.splide__slide img {
+    vertical-align: bottom;
+    width: 300px;
+}
+.sec-outer-bg{
+	background: #dbb351;
+}
+.cuz-sec-splide{
+	background: #2d2d2d;
+}
+.w-80{
+	width: 80vw;
+}
+@media(max-width:769px){
+	.cuz-sec-splide{
+		
+    width: 100vw;
+	}
+}
+
+
+
+.js-al-center{
+	justify-content: center;
+}
 .bg-linear{
 	background: linear-gradient(45deg, black, transparent);
 }

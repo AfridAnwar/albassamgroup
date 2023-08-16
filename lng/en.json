@@ -1,6 +1,5 @@
 
 {
-    "location":"Dammam 31461 Kingdom of Saudi Arabia",
     "home":"Home",
     "about":"About",
     "products":"Products & Services",
@@ -14,8 +13,10 @@
     "touch":"Touch",
     "services":"Services",
     "servicep":"Service Provided",
- 
-
+    
+    "location":"Dammam 31461 Kingdom of Saudi Arabia",
+    "loctech":"Jubail Dhahran highway | Opposite to Dammam Television Complex Post Box 1848 | Dammam 31441 | KSA ",
+    "locapeco":"Main Office | Al Bassam Tower |10th Floor P.O. Box 2611, 1st Street, Dammam 31461, Saudi Arabia  ",
 
     "welcomeabc":"WE ARE AL BASSAM GROUP OF COMPANIES",
     "welcometext":"Welcome to Al Bassam Group",
