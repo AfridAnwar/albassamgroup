@@ -6197,7 +6197,9 @@ body.lock-position
 	}
 }
 
-
+.submenu a,.sf-menu li{
+	text-transform: uppercase;
+}
 
 .js-al-center{
 	justify-content: center;
